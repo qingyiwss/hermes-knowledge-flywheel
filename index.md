@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：3
+> 最后更新：2026-05-29 | 总页数：4
 
 ## 投资策略
 
@@ -18,6 +18,7 @@
 - 🆕 [[agent-reach-internet]] — Agent Reach：给 AI 装上互联网之眼
 - 🆕 [[model-router]] — 智能模型路由：按复杂度自动选模型
 - 🆕 [[tradingagents-multi-agent-architecture]] — TradingAgents 多智能体交易框架拆解
+- 🆕 [[claude-obsidian-architecture]] — claude-obsidian 知识管理架构（15 skills + 混合检索）
 
 ## 公司运营
 
