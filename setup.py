@@ -9,14 +9,20 @@ import shutil
 from pathlib import Path
 
 HOME = Path.home()
-OS = platform.system()  # Windows / Darwin / Linux
+OS = platform.system()
+
+REPO_SSH = "git@github.com:qingyiwss/hermes-knowledge-flywheel.git"
+REPO_HTTPS = "https://github.com/qingyiwss/hermes-knowledge-flywheel.git"
+
 
 def run(cmd, **kw):
     print(f"  → {cmd}")
     return subprocess.run(cmd, shell=True, **kw)
 
+
 def step(msg):
     print(f"\n{'='*50}\n  {msg}\n{'='*50}")
+
 
 def check_python():
     v = sys.version_info
@@ -25,12 +31,28 @@ def check_python():
         sys.exit(1)
     print(f"✅ Python {v.major}.{v.minor}.{v.micro}")
 
+
 def install_python_deps():
     step("安装 Python 依赖")
     deps = ["psutil", "pyyaml"]
     for dep in deps:
-        run(f"{sys.executable} -m pip install {dep} -q", capture_output=True)
+        r = run(f"{sys.executable} -m pip install {dep} -q", capture_output=True)
+        if r.returncode != 0:
+            print(f"⚠️  pip install {dep} 失败，尝试 --user 模式...")
+            run(f"{sys.executable} -m pip install {dep} --user -q", capture_output=True)
     print("✅ psutil + pyyaml")
+
+
+def _test_ssh():
+    """测试 SSH 能否连 GitHub"""
+    r = subprocess.run(
+        "ssh -o StrictHostKeyChecking=no -o ConnectTimeout=5 -T git@github.com 2>&1",
+        shell=True, capture_output=True, text=True, timeout=8
+    )
+    # 成功认证返回 "Hi xxx! You've successfully authenticated"
+    return "successfully authenticated" in r.stdout.lower() or \
+           "successfully authenticated" in r.stderr.lower()
+
 
 def clone_flywheel():
     step("克隆飞轮知识库")
@@ -38,21 +60,65 @@ def clone_flywheel():
     if target.exists():
         print(f"⚠️  目录已存在: {target}")
         return target
-    run(f'git clone https://github.com/qingyiwss/hermes-knowledge-flywheel.git "{target}"')
+
+    # 策略: SSH 优先 → gh CLI → 手动指引
+    if _test_ssh():
+        url = REPO_SSH
+        print("✅ SSH 连接 GitHub 正常，使用 SSH 克隆")
+    else:
+        # 尝试 gh CLI
+        gh = shutil.which("gh")
+        if gh:
+            print("🔑 SSH 未配置，尝试 gh CLI...")
+            r = run(
+                f'gh repo clone qingyiwss/hermes-knowledge-flywheel "{target}"',
+                capture_output=True, text=True
+            )
+            if r.returncode == 0:
+                print(f"✅ 飞轮库(gh) → {target}")
+                return target
+            print(f"⚠️  gh clone 失败: {r.stderr.strip()}")
+
+        # 最后尝试 HTTPS + 环境变量 token
+        token = os.environ.get("GITHUB_TOKEN") or os.environ.get("GH_TOKEN")
+        if token:
+            url = f"https://{token}@github.com/qingyiwss/hermes-knowledge-flywheel.git"
+            print("🔑 使用 GITHUB_TOKEN 环境变量")
+        else:
+            print("\n❌ 无法克隆私有仓库。请选择以下方式之一：\n")
+            print("  方式1 (推荐): 配置 SSH Key")
+            print("    ssh-keygen -t ed25519 -C \"your@email.com\"")
+            print("    cat ~/.ssh/id_ed25519.pub  # 复制到 GitHub → Settings → SSH Keys")
+            print("    然后重新运行 python setup.py\n")
+            print("  方式2: 使用 GitHub CLI")
+            print("    brew install gh && gh auth login")
+            print("    然后重新运行 python setup.py\n")
+            print("  方式3: 设置 Token 环境变量")
+            print("    export GITHUB_TOKEN=ghp_xxxxxxxxxxxx")
+            print("    然后重新运行 python setup.py\n")
+            print("    然后重新运行 python setup.py\n")
+            sys.exit(1)
+
+    r = run(f'git clone "{url}" "{target}"', capture_output=True, text=True)
+    if r.returncode != 0:
+        print(f"❌ 克隆失败:\n{r.stderr}")
+        sys.exit(1)
     print(f"✅ 飞轮库 → {target}")
     return target
+
 
 def setup_nexus_monitor():
     step("部署 Nexus 监控系统")
     nexus_dir = HOME / "nexus"
     nexus_dir.mkdir(exist_ok=True)
-
-    # 写入默认配置
-    config = """# NΞXUS 监控配置
+    win_procs = '["python.exe"]'
+    unix_procs = '["python3"]'
+    procs = win_procs if OS == "Windows" else unix_procs
+    config = f"""# NΞXUS 监控配置
 agents:
   - name: "MyAgent"
     emoji: "🤖"
-    processes: ["python.exe"] if {os} == "Windows" else ["python3"]
+    processes: {procs}
     args_contains: []
 
 server:
@@ -67,24 +133,21 @@ system:
   memory: true
   disk: true
   network: true
-""".format(os=OS)
+"""
     (nexus_dir / "config.yaml").write_text(config, encoding="utf-8")
-
-    # 从飞轮库复制监控脚本（如果有的话）
     print(f"✅ Nexus 配置 → {nexus_dir}/config.yaml")
-    print(f"⚠️  Nexus 核心脚本需从飞轮库获取或手动创建")
-    return nexus_dir
+
 
 def setup_obsidian_vault(knowledge_dir):
     step("初始化知识库")
-    vault = knowledge_dir
-    # 确保关键文件存在
-    for f in ["wiki/hot.md", "growth-log.md", "index.md", "lessons-learned.md", "recent-sessions.md"]:
-        path = vault / f
+    for f in ["wiki/hot.md", "growth-log.md", "index.md",
+              "lessons-learned.md", "recent-sessions.md"]:
+        path = knowledge_dir / f
         if not path.exists():
             path.parent.mkdir(parents=True, exist_ok=True)
             path.write_text(f"# {path.stem}\n\n", encoding="utf-8")
-    print(f"✅ 知识库 → {vault}")
+    print(f"✅ 知识库 → {knowledge_dir}")
+
 
 def setup_git(vault_dir):
     step("配置 Git")
@@ -95,25 +158,23 @@ def setup_git(vault_dir):
     run('git config user.name "qingyiwss"')
     print("✅ Git 已配置")
 
+
 def detect_tools():
     step("检测可用工具")
-    tools = {}
     for name, cmd in [("git", "git --version"), ("node", "node --version"),
                        ("ollama", "ollama --version"), ("python", f"{sys.executable} --version")]:
         try:
             r = subprocess.run(cmd, shell=True, capture_output=True, text=True, timeout=5)
-            tools[name] = r.stdout.strip() if r.returncode == 0 else None
-        except:
-            tools[name] = None
-
-    for name, version in tools.items():
-        status = f"✅ {version}" if version else "❌ 未安装"
+            status = f"✅ {r.stdout.strip()}" if r.returncode == 0 else "❌ 异常"
+        except Exception:
+            status = "❌ 未安装"
         print(f"  {name}: {status}")
 
-    return tools
 
 def print_next_steps(knowledge_dir, nexus_dir):
     step("部署完成！下一步")
+    ollama_cmd = "winget install Ollama.Ollama" if OS == "Windows" else \
+                 "curl -fsSL https://ollama.com/install.sh | sh"
     print(f"""
   1. 启动知识上下文:
      cd "{knowledge_dir}" && python context-loader.py
@@ -121,26 +182,24 @@ def print_next_steps(knowledge_dir, nexus_dir):
   2. 部署 Nexus 监控(可选):
      cd "{nexus_dir}"
      # 从飞轮库复制 nexus-watch.py 和 nexus-server.py
-     # python nexus-watch.py &
-     # python nexus-server.py &
      # 浏览器打开 http://127.0.0.1:8765
 
   3. 安装本地模型(可选):
-     {"winget install Ollama.Ollama" if OS == "Windows" else "curl -fsSL https://ollama.com/install.sh | sh"}
+     {ollama_cmd}
      ollama pull qwen2.5-coder:14b
 
   4. AI 启动:
      读 BOOTSTRAP.md → 运行 context-loader.py → 开始工作
 """)
 
+
 def main():
-    print("""
+    print(f"""
   ╔═══════════════════════════════════╗
   ║   NΞXUS AI 部署向导              ║
-  ║   OS: {os:<26} ║
+  ║   OS: {OS:<26} ║
   ╚═══════════════════════════════════╝
-""".format(os=OS))
-
+""")
     check_python()
     install_python_deps()
     knowledge = clone_flywheel()
@@ -149,6 +208,7 @@ def main():
     nexus = setup_nexus_monitor()
     detect_tools()
     print_next_steps(knowledge, nexus)
+
 
 if __name__ == "__main__":
     main()
