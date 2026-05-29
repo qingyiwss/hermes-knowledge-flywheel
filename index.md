@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：8
+> 最后更新：2026-05-29 | 总页数：9
 
 ## 投资策略
 
@@ -23,6 +23,7 @@
 - 🆕 [[llmlingua-prompt-compression]] — LLMLingua Prompt 压缩（20x 压缩，省 75% 输入）
 - 🆕 [[gptcache-semantic-cache]] — GPTCache 语义缓存（10x 成本，100x 速度）
 - 🆕 [[litellm-ai-gateway]] — LiteLLM AI 网关（自动路由 + 成本追踪 + 预算控制）
+- 🆕 [[token-smart-pipeline]] — Token 智能 Pipeline（压缩+缓存+路由三层引擎落地）
 
 ## 公司运营
 
