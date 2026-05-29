@@ -2,6 +2,13 @@
 
 > 知识飞轮的成长轨迹。每次拆解一个项目后追加。
 
+## [2026-05-29] CodeGraphContext 代码图谱 MCP 工具
+
+- **来源：** https://github.com/CodeGraphContext/CodeGraphContext
+- **学到了什么：** AST 解析代码生成图节点（Repository/File/Module/Class/Function）+ 关系边（CONTAINS/CALLS/IMPORTS/INHERITS），通过 MCP 暴露 8 个工具（find_code、analyze_relationships 含 15 种查询类型、find_dead_code、cyclomatic_complexity、watch_directory）；异步 job_id 模式处理长索引不阻塞；多数据库后端（Neo4j/FalkorDB/Kuzu）统一接口切换；配套 AI 系统 Prompt 定义了"优先查图、不要猜"的核心原则。
+- **能力提升：** pre-commit verifier 有了清晰的架构蓝图——用 Python `ast` 模块 + dict 替代 Neo4j，轻量实现死代码检测、调用链分析、复杂度告警；"先查后答"原则可直接融入 Hermes 的代码审查流程。
+- **下一步：** 用 stdlib ast 实现简化版 pre-commit verifier agent；集成到 git hook 中自动触发。
+
 ## [2026-05-29] claude-obsidian 知识管理架构
 
 - **来源：** https://github.com/AgriciDaniel/claude-obsidian
