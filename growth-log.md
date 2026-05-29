@@ -21,3 +21,34 @@
 ### 下一步计划
 - 本轮扫描方向：AI Agent 编排框架 + CLI 自动化工具 + Prompt 工程
 - 优先补齐：联网能力、动态任务调度
+
+---
+
+## 轮次 1 — Harness工程 + 联网能力 [2026-05-29]
+
+### 扫描范围
+- 三个方向各取 Top3 仓库，精选 2 个深度拆解
+
+### 拆解成果
+
+| 项目 | ⭐ | 学到的 | 产物 |
+|------|-----|--------|------|
+| shareAI-lab/learn-claude-code | 63k | Agent = Model + Harness；Harness 五要素；六大核心模式 | [[harness-engineering]] |
+| Panniantong/Agent-Reach | 20k | 一键互联网能力；MCP 网关；多平台免费接入 | [[agent-reach-internet]] |
+
+### 核心洞察
+1. **我们已有 80% 的 Harness** — project-commander 本质上就是个 Harness，缺少的是"Harness 构建者"思维
+2. **联网是最大短板** — Agent Reach 可以直接填补，安装即可用
+3. **Context Compaction 待补** — 长会话 token 管理是下一个要解决的问题
+
+### 能力评估更新
+| 维度 | 之前 | 之后 |
+|------|------|------|
+| Harness 意识 | ⚠️ 有结构但无意 | ✅ 明确五要素框架 |
+| 联网搜索 | ❌ | ⚠️ 方案已定，待安装 |
+| 知识归档 | ✅ | ✅ 两篇深度笔记入 wiki |
+
+### 下一步
+- [ ] 安装 Agent Reach，创建 web-search skill
+- [ ] 更新 project-commander 加入 Harness 检查表
+- [ ] 第二轮扫描方向：Context 管理 + Prompt 优化
