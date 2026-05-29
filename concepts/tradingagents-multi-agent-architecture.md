@@ -51,7 +51,7 @@ _ENV_OVERRIDES = {
 
 ## 🔄 Hermes 进化映射 (Integration Roadmap)
 
-- **关联现有技能：** [[ai-commander-system]], [[reasonix-overview]], [[agent-reach-internet]], [[harness-engineering]]
+- **关联现有技能：** [[ai-commander-system]], [[agent-reach-internet]], [[harness-engineering]]
 - **改造方案：** 需要修改的核心模块和方向：
 
 | 特性 | 改造模块 | 具体方向 |

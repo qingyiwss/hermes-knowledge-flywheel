@@ -12,8 +12,7 @@
 
 ## AI/自媒体
 
-- [[reasonix-overview]] — Reasonix 项目总览
-- [[ai-commander-system]] — AI 指挥官系统架构（Hermes + cc + Reasonix）
+- [[ai-commander-system]] — AI 指挥官：任务拆解与团队协作
 - 🆕 [[harness-engineering]] — Harness 工程：Agent 产品 = Model + Harness
 - 🆕 [[agent-reach-internet]] — Agent Reach：给 AI 装上互联网之眼
 - 🆕 [[model-router]] — 智能模型路由：按复杂度自动选模型
@@ -35,11 +34,6 @@
 - 🆕 [[doorstop-requirements-management]] — Doorstop 基于Git的轻量需求管理（629⭐）
 - 🆕 [[metagpt-multi-agent-requirements]] — MetaGPT 多Agent需求→软件全流程（68K⭐）
 - 🆕 [[robotframework-atdd-validation]] — Robot Framework 验收测试驱动需求验证（11.7K⭐）
-
-## 公司运营
-
-- [[company-registration]] — 石家庄公司注册全流程
-- [[company-templates]] — 法律文件模板清单
 
 ## 工具/系统
 

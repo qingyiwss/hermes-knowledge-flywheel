@@ -52,6 +52,5 @@ cc（Claude Code）     Reasonix（投资工具）
 5. 汇报："完成了，回测结果如下"
 ```
 
-## 相关
-- [[reasonix-overview]] — Reasonix 工具详情
+- **扩展方向**
 - [[hermes-config]] — Hermes 模型和配置
