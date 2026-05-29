@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：9
+> 最后更新：2026-05-29 | 总页数：14
 
 ## 投资策略
 
@@ -24,6 +24,11 @@
 - 🆕 [[gptcache-semantic-cache]] — GPTCache 语义缓存（10x 成本，100x 速度）
 - 🆕 [[litellm-ai-gateway]] — LiteLLM AI 网关（自动路由 + 成本追踪 + 预算控制）
 - 🆕 [[token-smart-pipeline]] — Token 智能 Pipeline（压缩+缓存+路由三层引擎落地）
+- 🆕 [[metagpt-multi-agent-collaboration]] — MetaGPT 多Agent协作框架（SOP驱动+共享环境）
+- 🆕 [[qodo-merge-ai-code-review]] — Qodo Merge AI代码审查（Agent Pipeline模式）
+- 🆕 [[affine-crdt-collaboration]] — AFFiNE 知识协作（CRDT实时同步+BlockSuite）
+- 🆕 [[gitbutler-virtual-branches]] — GitButler 虚拟分支（多任务并行无切换）
+- 🆕 [[plane-task-orchestration]] — Plane 任务编排（三层模型+AI辅助）
 
 ## 公司运营
 

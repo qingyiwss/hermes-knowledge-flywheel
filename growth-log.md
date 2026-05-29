@@ -2,6 +2,13 @@
 
 > 知识飞轮的成长轨迹。每次拆解一个项目后追加。
 
+## [2026-05-29] Token Smart Pipeline + 团队协作五连拆
+
+- **来源：** 自研 + GitHub 扫描（MetaGPT/PR-Agent/AFFiNE/GitButler/Plane）
+- **学到了什么：** 将 LLMLingua+GPTCache+LiteLLM 三层落地为 pipeline（`pipe.ask()` 一行调用）；MetaGPT 的 SOP+Environment 消息总线是 Agent 协作的黄金范式；PR-Agent 的 8 Agent Pipeline 可复用到 Hermes 审查流程；AFFiNE 的 CRDT 同步机制解决了离线协作的数据一致性问题；GitButler 的虚拟分支可让 Hermes 多任务并行隔离；Plane 的三层任务模型适合 Agent 任务分解。
+- **能力提升：** Token 优化三层落地为可运行代码；指挥官模式 v1.0→v2.0（强制派发+能力矩阵+违规自检）；团队协作方向积累 5 篇 Wiki。
+- **下一步：** 将 MetaGPT 的 Environment 消息总线引入 Hermes subagent 通信；实现 pre-commit verifier（借鉴 PR-Agent 的 Pipeline 模式）。
+
 ## [2026-05-29] LiteLLM AI 网关
 
 - **来源：** https://github.com/BerriAI/litellm
