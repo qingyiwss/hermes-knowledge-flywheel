@@ -6,6 +6,8 @@
 ## 工具和技巧
 
 ### ✅ 应该做的
+- [2026-05-29] GitHub 推送用 `GIT_ASKPASS=echo` + heredoc 传 token，不要放 URL 或环境变量
+- [2026-05-29] raw.githubusercontent.com 必须走代理（7890），github.com 和 api.github.com 直连即可
 - [2026-05-29] 用 `hermes config set` 修改配置，不要直接写 config.yaml
 - [2026-05-29] 用 `delegate_task` 并行派发独立任务，效率 x3
 - [2026-05-29] 用 `patch` 编辑文件，不要用 sed/awk
@@ -13,10 +15,16 @@
 - [2026-05-29] Wiki 和 Obsidian 共用目录（WIKI_PATH = Obsidian Vault）→ wikilinks 双向互通
 
 ### ❌ 不要做的
+- [2026-05-29] 飞轮笔记只用 6 个 frontmatter 字段，不要混入 SCHEMA.md 的 type/confidence/sources
+- [2026-05-29] 不要用 `echo "ghp_xxx" > file` 传 token — shell 会遮蔽为字面量 ***
+- [2026-05-29] Windows 下不要用 `python3` — 指向 Windows Store 存根，用 `python`
+- [2026-05-29] git push 不要走代理 — Clash 阻断 api.github.com (403)
 - [2026-05-29] 不要尝试自动化 `hermes fallback add` — 它是交互式的，只能用户手动
 - [2026-05-29] 不要试图直接读写 config.yaml 或 .env — 会被拦截
 - [2026-05-29] 不要用 `execute_code` 的 terminal 执行长脚本 — 容易超时
 - [2026-05-29] 不要跳过审核直接汇报 — commander 模式的三关审核必须走
+- [2026-05-29] 不要反复重试 git push — 两次失败立刻换方案（API 或 GIT_ASKPASS）
+- [2026-05-29] 不要在 execute_code 中用 token 做 GitHub API 调用 — token 被截断，返回 401
 
 ## 架构决策
 

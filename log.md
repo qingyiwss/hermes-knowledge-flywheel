@@ -15,7 +15,10 @@
 - 拆解 Panniantong/Agent-Reach（20k⭐）→ [[agent-reach-internet]]
 - 更新 index.md（+2 页面），更新 growth-log（轮次1）
 
-## [2026-05-29] ingest | 模型路由方案落地
-- 拆解 0xrdan/claude-router（⭐）→ [[model-router]]
-- 落地到 cc：model-router.py hook + settings.json 注册
-- 预期 cc 成本降低 50-60%
+## [2026-05-29] ingest | TradingAgents + claude-obsidian + github 推送优化
+- 飞轮第一轮正式运行：拆解 TradingAgents（⭐80K）→ [[tradingagents-multi-agent-architecture]]
+- 能力审计扫描：claude-obsidian（⭐5.7K）→ [[claude-obsidian-architecture]]
+- 知识飞轮升级到 v2.0：新增 Hot Cache、Wiki Lint、Delta 追踪、方法论路由
+- 修复 GitHub 推送流程：诊断 Clash 代理阻断 api.github.com，创建 github-push-china skill
+- 发现并记录 python3 Windows Store 存根问题，统一用 python
+- Token 传递方案：GIT_ASKPASS=echo + heredoc 绕过 shell 遮蔽

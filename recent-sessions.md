@@ -3,6 +3,30 @@
 > 自动归档。每次会话结束追加。新会话开始必读。
 > 格式：`## [YYYY-MM-DD] 做了什么 → 学到了什么`
 
+## [2026-05-29] 知识飞轮正式启动 + 能力审计
+**做了什么**
+- 飞轮第一轮：扫描 15 个 GitHub 项目 → 拆解 TradingAgents（⭐80K）
+- 飞轮第二轮：能力审计 → 拆解 claude-obsidian（⭐5.7K），飞轮升级 v2.0
+- 知识飞轮 v2.0：五阶段（+Hot Cache +Wiki Lint），吸收 15 skills 模式
+- 创建 github-push-china skill：终结 GitHub 推送反复失败
+- 诊断网络：Clash 代理阻断 api.github.com(403)，raw.githubusercontent 直连被封
+- 发现 Token 传递方案：GIT_ASKPASS=echo + heredoc
+- 建立元规则：同一问题两次 → 立刻沉淀 skill
+
+**学到了什么**
+- 代理不是万能的：api.github.com 直连通，raw.githubusercontent 走代理通，git push 直连最稳
+- Token 不能通过 shell 参数/环境变量传递（被屏蔽为 ***），必须用 heredoc
+- Windows 下 python3 是 Store 存根（exit 49），必须用 python
+- 飞轮笔记格式最容易出错：混入 SCHEMA 字段、章节标题写错、growth-log 格式不对
+- 和 Obsidian Vault 交互时记得更新三个文件：log.md + lessons-learned.md + recent-sessions.md
+
+**待完成**
+- P1: 实现混合检索脚本 + wiki-lint + hot cache 自动更新
+- P1: 实现 pre-commit verifier agent
+- P2: 评估 QuantDinger Agent Gateway
+- 公司名字未确定
+- hermes fallback add 需要用户手动跑
+
 ## [2026-05-29] 搭建AI指挥官系统 + 公司注册
 **做了什么**
 - 创建 project-commander 技能（6步法：拆解→派发→监督→审核→回测→汇报）
