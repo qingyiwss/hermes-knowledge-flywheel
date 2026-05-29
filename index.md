@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：5
+> 最后更新：2026-05-29 | 总页数：8
 
 ## 投资策略
 
@@ -20,6 +20,9 @@
 - 🆕 [[tradingagents-multi-agent-architecture]] — TradingAgents 多智能体交易框架拆解
 - 🆕 [[claude-obsidian-architecture]] — claude-obsidian 知识管理架构（15 skills + 混合检索）
 - 🆕 [[codegraphcontext-mcp-tools]] — CodeGraphContext 代码图谱 MCP 工具（AST→图→死代码检测）
+- 🆕 [[llmlingua-prompt-compression]] — LLMLingua Prompt 压缩（20x 压缩，省 75% 输入）
+- 🆕 [[gptcache-semantic-cache]] — GPTCache 语义缓存（10x 成本，100x 速度）
+- 🆕 [[litellm-ai-gateway]] — LiteLLM AI 网关（自动路由 + 成本追踪 + 预算控制）
 
 ## 公司运营
 

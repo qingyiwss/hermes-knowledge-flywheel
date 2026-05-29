@@ -2,6 +2,27 @@
 
 > 知识飞轮的成长轨迹。每次拆解一个项目后追加。
 
+## [2026-05-29] LiteLLM AI 网关
+
+- **来源：** https://github.com/BerriAI/litellm
+- **学到了什么：** 100+ LLM 统一 OpenAI 格式调用；Router 自动按成本/延迟选择模型并自动 fallback；每次调用带 response_cost 追踪实际花费；预算硬限制超限自动 429；P95 延迟仅 8ms @ 1K RPS；虚拟密钥 + guardrails 生产就绪。Stripe/Netflix 生产使用。
+- **能力提升：** Hermes 可实现按任务复杂度自动路由（flash 简单任务 / pro 复杂决策），每次对话末尾显示 token 消耗和费用，月预算告警 + 自动降级。
+- **下一步：** 评估 litellm Router 替代 Hermes 当前的模型选择逻辑；实现成本追踪回调。
+
+## [2026-05-29] GPTCache 语义缓存
+
+- **来源：** https://github.com/zilliztech/GPTCache
+- **学到了什么：** 请求→嵌入→相似度搜索→命中则返回缓存→未命中调 LLM→存入缓存；支持多种嵌入后端（OpenAI/HuggingFace/本地）和存储后端（Redis/SQLite/Milvus）；相似度阈值 + LRU 淘汰；与 LangChain/LlamaIndex 深度集成。
+- **能力提升：** 飞轮 GitHub API 搜索可缓存 ~80%；相似错误诊断直接复用之前方案；skill 文档查询缓存 ~40% 冷启动开销。
+- **下一步：** 评估在 Hermes tool 调用层加缓存层；优先对 web_search 和 search_files 做语义缓存。
+
+## [2026-05-29] LLMLingua Prompt 压缩
+
+- **来源：** https://github.com/microsoft/LLMLingua
+- **学到了什么：** 小 LM 计算每个 token 困惑度→移除低信息量 token→最高 20x 压缩；LLMLingua-2 用 BERT 做 token 分类，3-6x 更快且任务无关；LongLLMLingua 解决长文本"迷失中间"问题；三个 ACL/EMNLP 论文背书。
+- **能力提升：** 系统 prompt（AGENTS.md + memory）可压缩 ~70%；飞轮扫描的长 README 先压缩再分析节省 ~80% 上下文；历史对话压缩替代粗暴截断保持 ~50% 更多上下文。
+- **下一步：** 评估 LLMLingua-2 在 Hermes 的 skill/memory 注入前做轻量压缩；测试压缩后对指令遵循的影响。
+
 ## [2026-05-29] CodeGraphContext 代码图谱 MCP 工具
 
 - **来源：** https://github.com/CodeGraphContext/CodeGraphContext
