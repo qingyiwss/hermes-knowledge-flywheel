@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：17
+> 最后更新：2026-05-29 | 总页数：20
 
 ## 投资策略
 
@@ -32,6 +32,9 @@
 - 🆕 [[aider-ai-pair-programming]] — Aider AI结对编程（SEARCH/REPLACE+Repo Map，cc学习）
 - 🆕 [[quantaxis-backtest-engine]] — QUANTAXIS 回测引擎（事件驱动+多因子，re学习）
 - 🆕 [[a2a-agent-protocol]] — Google A2A 通信协议（Agent Card+Task，团队共享）
+- 🆕 [[doorstop-requirements-management]] — Doorstop 基于Git的轻量需求管理（629⭐）
+- 🆕 [[metagpt-multi-agent-requirements]] — MetaGPT 多Agent需求→软件全流程（68K⭐）
+- 🆕 [[robotframework-atdd-validation]] — Robot Framework 验收测试驱动需求验证（11.7K⭐）
 
 ## 公司运营
 

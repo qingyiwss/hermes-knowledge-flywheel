@@ -57,3 +57,9 @@
 - **学到了什么：** 多智能体辩论机制（Bull/Bear 对立研究员 + 三方风控辩论）可有效降低单模型确认偏误；双 LLM 策略（廉价模型扫描 + 昂贵模型决策）是 token 经济学的最佳实践；交易记忆闭环（pending → 反射 → resolved）让系统从历史错误中自我修正；结构化输出 + 五档评级让决策粒度从二值升级到五档，解析用确定性正则而非额外 LLM 调用。
 - **能力提升：** Reasonix 可从单路径分析升级为辩论式多视角决策；新建交易记忆模块让回测结果反哺策略优化；双模型策略直接落地（flash 扫描 + pro 决策）；配置系统可引入 `_ENV_OVERRIDES` 映射表模式。
 - **下一步：** 在 Reasonix 回测引擎中实现 bull/bear 双参数并行辩论；探索 LangGraph 替代当前线性脚本的可行性。
+
+## [2026-05-29] 需求分析专题 — 3篇
+- **来源：** doorstop (629⭐) + MetaGPT (68K⭐) + Robot Framework (11.7K⭐)
+- **学到了什么：** 需求管理三环节——管理(doorstop Git原生)、分析(MetaGPT SOP驱动)、验证(Robot Framework 关键字驱动)。三者可组合：doorstop存需求→MetaGPT生成实现→Robot验证回归。
+- **能力提升：** Nexus监控系统可借鉴doorstop的文件式任务存储+SOP模板化输出+Robot自动化验收。
+- **下一步：** 将需求分析三件套融入Nexus独立项目设计。
