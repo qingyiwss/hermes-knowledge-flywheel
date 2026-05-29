@@ -1,0 +1,272 @@
+{
+  "a2a-agent-protocol": {
+    "file": "concepts\\a2a-agent-protocol.md",
+    "title": "a2a-agent-protocol",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "team-collaboration"
+    ],
+    "summary": "Google A2A（Agent-to-Agent）是一个开源的 Agent 间通信协议（⭐15K），定义了不同 Agent 如何发现彼此、协商能力、派发任务并追踪执行过程。它让多个独立 Agent 能像团队成员一样协同工作，而不需要硬编码的调用关系。",
+    "size": 2904
+  },
+  "affine-crdt-collaboration": {
+    "file": "concepts\\affine-crdt-collaboration.md",
+    "title": "AFFiNE 知识协作架构拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "team-collaboration"
+    ],
+    "summary": "AFFiNE 是一个开源的 **Notion + Miro 替代品**（GitHub ~45K Stars），技术栈为 **TypeScript + Rust**。核心定位是「本地优先 + 实时协作」的知识操作系统。",
+    "size": 2741
+  },
+  "agent-reach-internet": {
+    "file": "concepts\\agent-reach-internet.md",
+    "title": "Agent Reach — 给 AI Agent 装上互联网之眼",
+    "tags": [
+      "skill-learning",
+      "web-search",
+      "agent-tools",
+      "internet-access"
+    ],
+    "summary": "**痛点：** AI Agent 能写代码、改文档，但一遇到\"帮我上网搜一下\"就抓瞎。每个平台（YouTube/Twitter/Reddit/B站/小红书/GitHub）都有各自的障碍—付费 API、IP 封锁、登录墙、数据清洗。",
+    "size": 3766
+  },
+  "ai-commander-system": {
+    "file": "concepts\\ai-commander-system.md",
+    "title": "AI 指挥官系统架构",
+    "tags": [
+      "hermes",
+      "claude-code",
+      "reasonix",
+      "automation"
+    ],
+    "summary": "```",
+    "size": 1754
+  },
+  "aider-ai-pair-programming": {
+    "file": "concepts\\aider-ai-pair-programming.md",
+    "title": "aider-ai-pair-programming",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "cc-capability"
+    ],
+    "summary": "Aider 是一个终端内的 AI 结对编程助手，由 Paul Gauthier 开发，在 GitHub 获得 26K+ Star。它以命令行形态运行，支持接入 GPT-4o、Claude、DeepSeek 等主流 LLM，能够在本地仓库中完成编辑、重构、测试等全流程编码任务。与 Copilot 等 ",
+    "size": 2727
+  },
+  "claude-obsidian-architecture": {
+    "file": "concepts\\claude-obsidian-architecture.md",
+    "title": "claude-obsidian 知识管理架构拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "knowledge-management"
+    ],
+    "summary": "",
+    "size": 3202
+  },
+  "codegraphcontext-mcp-tools": {
+    "file": "concepts\\codegraphcontext-mcp-tools.md",
+    "title": "CodeGraphContext 代码图谱 MCP 工具拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "code-quality"
+    ],
+    "summary": "",
+    "size": 3652
+  },
+  "doorstop-requirements-management": {
+    "file": "concepts\\doorstop-requirements-management.md",
+    "title": "Doorstop — 基于 Git 的轻量需求管理",
+    "tags": [
+      "skill-learning",
+      "requirements",
+      "cli",
+      "git-native",
+      "devops"
+    ],
+    "summary": "**痛点：** 需求文档与代码割裂——PRD 在 Wiki/Word 里，代码在 Git 里，两者永远不同步。需求变更时找不到对应代码，代码改动时不知道影响了哪些需求。",
+    "size": 2557
+  },
+  "gitbutler-virtual-branches": {
+    "file": "concepts\\gitbutler-virtual-branches.md",
+    "title": "GitButler 虚拟分支协作架构拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "team-collaboration"
+    ],
+    "summary": "GitButler 是一款重新定义 Git 分支工作流的桌面客户端（GitHub ~17K Stars），技术栈为 **Rust + TypeScript**，基于 Tauri 构建跨平台桌面壳。",
+    "size": 4193
+  },
+  "gptcache-semantic-cache": {
+    "file": "concepts\\gptcache-semantic-cache.md",
+    "title": "GPTCache LLM 语义缓存拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "token-optimization"
+    ],
+    "summary": "",
+    "size": 2088
+  },
+  "harness-engineering": {
+    "file": "concepts\\harness-engineering.md",
+    "title": "Harness 工程 — Agent 产品的正确构建范式",
+    "tags": [
+      "skill-learning",
+      "agent-architecture",
+      "harness",
+      "claude-code"
+    ],
+    "summary": "**问题：** 大多数\"AI Agent 框架\"其实是 Rube Goldberg 机器 — 用 if-else 和节点图把 LLM 调用串起来，以为这就是 Agent。",
+    "size": 3587
+  },
+  "litellm-ai-gateway": {
+    "file": "concepts\\litellm-ai-gateway.md",
+    "title": "LiteLLM AI 网关成本优化拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "token-optimization"
+    ],
+    "summary": "",
+    "size": 2412
+  },
+  "llmlingua-prompt-compression": {
+    "file": "concepts\\llmlingua-prompt-compression.md",
+    "title": "LLMLingua Prompt 压缩技术拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "token-optimization"
+    ],
+    "summary": "",
+    "size": 2311
+  },
+  "metagpt-multi-agent-collaboration": {
+    "file": "concepts\\metagpt-multi-agent-collaboration.md",
+    "title": "MetaGPT 多Agent协作框架拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "team-collaboration"
+    ],
+    "summary": "单Agent处理复杂软件工程任务时，上下文窗口有限、推理链过长、输出质量不稳定。MetaGPT 将软件工程的标准作业流程 (SOP) 编码为多Agent协作网络，模拟产品经理、架构师、工程师等角色的真实协作。典型场景包括：从一句话需求自动生成完整项目代码、自动化 PRD 撰写与评审、端到端软件开发流",
+    "size": 3091
+  },
+  "metagpt-multi-agent-requirements": {
+    "file": "concepts\\metagpt-multi-agent-requirements.md",
+    "title": "MetaGPT — 多 Agent 需求→软件全流程",
+    "tags": [
+      "skill-learning",
+      "ai-agent",
+      "requirements",
+      "multi-agent",
+      "code-generation"
+    ],
+    "summary": "**痛点：** 需求分析和架构设计占软件开发 40% 时间，但 AI 编码工具（Copilot/Cursor）只解决\"写代码\"环节，前面的需求澄清、系统设计、任务拆解仍靠人。",
+    "size": 2730
+  },
+  "model-router": {
+    "file": "concepts\\model-router.md",
+    "title": "智能模型路由 — 根据复杂度自动选模型",
+    "tags": [
+      "skill-learning",
+      "model-routing",
+      "cost-optimization",
+      "agent-upgrade"
+    ],
+    "summary": "**痛点：** 一条\"帮我看看这个文件\"消耗和\"帮我重构整个架构\"一样的模型资源。简单查询不该花 strong model 的钱。",
+    "size": 3153
+  },
+  "plane-task-orchestration": {
+    "file": "concepts\\plane-task-orchestration.md",
+    "title": "Plane 任务编排与分配架构拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "team-collaboration"
+    ],
+    "summary": "Plane 是一个开源的任务编排与项目管理工具（GitHub ~30K Stars），定位为 Jira/Linear 的开源替代。技术栈为 **TypeScript**（前端）+ **Python/Django**（后端），采用 REST API + Webhook 事件驱动 + Swagger 文",
+    "size": 3730
+  },
+  "qodo-merge-ai-code-review": {
+    "file": "concepts\\qodo-merge-ai-code-review.md",
+    "title": "Qodo Merge AI代码审查架构拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "team-collaboration"
+    ],
+    "summary": "Qodo Merge（原 PR-Agent）是 Codium AI 开源的 AI 驱动代码审查工具，GitHub Stars ~7.5K，Python 实现。它自动对 Pull Request 进行 review、描述、改进建议、问答反思等全流程审查，支持 GitHub/GitLab/Bitbuck",
+    "size": 3607
+  },
+  "quantaxis-backtest-engine": {
+    "file": "concepts\\quantaxis-backtest-engine.md",
+    "title": "QUANTAXIS 事件驱动回测引擎剖析",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "re-capability"
+    ],
+    "summary": "",
+    "size": 3124
+  },
+  "robotframework-atdd-validation": {
+    "file": "concepts\\robotframework-atdd-validation.md",
+    "title": "Robot Framework — 验收测试驱动的需求验证",
+    "tags": [
+      "skill-learning",
+      "testing",
+      "bdd",
+      "atdd",
+      "qa",
+      "ci-cd"
+    ],
+    "summary": "**痛点：** 需求文档写完就过时，测试用例和需求描述是两套语言。需求说\"用户可登录\"，测试写 `test_login_returns_200()`——两者之间没有机器可读的追溯。",
+    "size": 2810
+  },
+  "token-smart-pipeline": {
+    "file": "concepts\\token-smart-pipeline.md",
+    "title": "Token Smart Pipeline — 三层优化引擎落地",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "token-optimization",
+      "自研"
+    ],
+    "summary": "",
+    "size": 3008
+  },
+  "tradingagents-multi-agent-architecture": {
+    "file": "concepts\\tradingagents-multi-agent-architecture.md",
+    "title": "TradingAgents 多智能体交易架构拆解",
+    "tags": [
+      "skill-learning",
+      "automation",
+      "agent-upgrade",
+      "ai-model",
+      "strategy"
+    ],
+    "summary": "",
+    "size": 3189
+  }
+}

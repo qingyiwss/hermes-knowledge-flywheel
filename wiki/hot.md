@@ -1,26 +1,12 @@
----
-type: meta
-title: "Hot Cache"
-updated: 2026-05-29T18:30:00
----
+# Hot Cache — 最新上下文
+> 更新: 2026-05-29 · Wiki: 22篇 · P1: Nexus监控/A2A | P2: wiki-lint/混合检索
 
-# Recent Context
-
-## Last Updated
-2026-05-29. 需求分析专题3轮飞轮。doorstop+MetaGPT+Robot Framework。Wiki 页数 17→20。
-
-## Key Recent Facts
-- 需求分析三件套：doorstop(Git原生需求管理) + MetaGPT(SOP多Agent需求→代码) + Robot Framework(关键字驱动验收测试)
-- cc 编码能力已集成（hermes-cc.sh），监控面板已升级赛博风
-- Nexus 独立监控项目设计中：零侵入、进程嗅探+日志尾随
-- 团队三人：Hermes（指挥官）+ cc（Claude Code）+ re（Reasonix）
-
-## Recent Changes
-- New concepts: doorstop, metagpt-multi-agent, robotframework (3篇)
-- Updated: index (17→20), growth-log, hot.md
-- CC 集成已完成：bash /d/aizhuli/.claude/hermes-cc.sh
+## 最近飞轮
+- 需求分析三件套: doorstop(Git需求管理) + MetaGPT(SOP多Agent) + Robot Framework(验收测试)
+- CC集成完成: hermes-cc.sh 一键调用
+- Nexus监控: 独立项目D:/nexus, 零侵入+SSE实时面板
 
 ## Active Threads
-- P1: Nexus 独立监控项目（零侵入、通用化）
-- P1: A2A 协议落地 → Nexus 内部 Agent 通信
-- P2: 混合检索 + wiki-lint
+- P1: Nexus独立监控完善(LibreHardwareMonitor接入温度/风扇)
+- P1: A2A协议落地
+- P2: wiki-lint + 混合检索
