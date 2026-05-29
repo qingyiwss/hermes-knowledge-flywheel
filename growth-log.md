@@ -2,6 +2,13 @@
 
 > 知识飞轮的成长轨迹。每次拆解一个项目后追加。
 
+## [2026-05-29] cc+re 共同成长计划 — Aider/QUANTAXIS/A2A
+
+- **来源：** GitHub 扫描（Aider 26K / QUANTAXIS 8.4K / Google A2A 15K）
+- **学到了什么：** Aider 的 SEARCH/REPLACE 编辑格式 + Repo Map 可大幅提升 cc 的代码修改精度；QUANTAXIS 的事件驱动回测 + 夏普/Calmar 归因可直接移植到 re 的估值定投；A2A 的 Agent Card + Task 协议是三人团队统一通信接口的蓝图。
+- **能力提升：** 飞轮从"我一个人的知识库"升级为"三人共享知识库"——cc 有了 CLAUDE.md 自动加载 Wiki，re skill 增加了飞轮知识链接。
+- **下一步：** 将 A2A 协议落地为 Hermes↔cc↔re 的统一接口；让 cc 用 Aider 的编辑策略改写 Reasonix 代码。
+
 ## [2026-05-29] Token Smart Pipeline + 团队协作五连拆
 
 - **来源：** 自研 + GitHub 扫描（MetaGPT/PR-Agent/AFFiNE/GitButler/Plane）

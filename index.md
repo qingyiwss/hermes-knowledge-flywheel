@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：14
+> 最后更新：2026-05-29 | 总页数：17
 
 ## 投资策略
 
@@ -29,6 +29,9 @@
 - 🆕 [[affine-crdt-collaboration]] — AFFiNE 知识协作（CRDT实时同步+BlockSuite）
 - 🆕 [[gitbutler-virtual-branches]] — GitButler 虚拟分支（多任务并行无切换）
 - 🆕 [[plane-task-orchestration]] — Plane 任务编排（三层模型+AI辅助）
+- 🆕 [[aider-ai-pair-programming]] — Aider AI结对编程（SEARCH/REPLACE+Repo Map，cc学习）
+- 🆕 [[quantaxis-backtest-engine]] — QUANTAXIS 回测引擎（事件驱动+多因子，re学习）
+- 🆕 [[a2a-agent-protocol]] — Google A2A 通信协议（Agent Card+Task，团队共享）
 
 ## 公司运营
 

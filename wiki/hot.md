@@ -1,30 +1,30 @@
 ---
 type: meta
 title: "Hot Cache"
-updated: 2026-05-29T18:00:00
+updated: 2026-05-29T18:30:00
 ---
 
 # Recent Context
 
 ## Last Updated
-2026-05-29. Token 优化三层落地 + 团队协作 5 轮飞轮扫描。Wiki 页数 9→14。
+2026-05-29. 飞轮升级为三人共享体系。cc 有了 CLAUDE.md，re skill 接入 Wiki。Wiki 页数 14→17。
 
 ## Key Recent Facts
-- Token Smart Pipeline 三层引擎落地（D:\Reasonix\token_smart_pipeline.py, 372行）
-- 指挥官模式 v1.0→v2.0（强制派发+子代理能力矩阵+违规自检）
-- MetaGPT SOP+Environment 消息总线是 Agent 协作黄金范式
-- PR-Agent 8 Agent Pipeline → pre-commit verifier 蓝图
-- AFFiNE CRDT → 离线协作数据一致性方案
-- GitButler 虚拟分支 → 多任务并行隔离沙箱
-- Plane 三层任务模型 → Agent 任务分解参考
+- 团队三人：Hermes（指挥官）+ cc（Claude Code 写手）+ re（Reasonix 投资）
+- cc 知识入口：D:\Reasonix\CLAUDE.md（自动加载 Wiki 链接）
+- re 知识链接：reasonix skill 已加入飞轮 Wiki 引用
+- Aider (26K)：SEARCH/REPLACE + Repo Map → cc 编码精度提升方案
+- QUANTAXIS (8.4K)：事件驱动回测 + 夏普/Calmar → re 绩效分析升级方案
+- A2A (15K)：Agent Card + Task 协议 → 三人统一通信接口蓝图
+- Token Smart Pipeline 三层已落地（D:\Reasonix\token_smart_pipeline.py）
 
 ## Recent Changes
-- New concepts: metagpt, qodomerge, affine, gitbutler, plane, token-smart-pipeline
-- Updated: project-commander v2.0, growth-log, index (9→14)
-- Code: token_smart_pipeline.py (L1压缩+L2缓存+L3路由 全部通过)
+- New concepts: aider, quantaxis, a2a (3篇)
+- Updated: CLAUDE.md (cc入口), reasonix skill (re入口), index (14→17), growth-log
+- 指挥官 v2.0 已补全 cc+re+子代理能力矩阵
 
 ## Active Threads
-- P1: MetaGPT Environment 消息总线 → Hermes subagent 通信
-- P1: pre-commit verifier（借鉴 PR-Agent Pipeline 模式）
+- P1: A2A 协议落地 → Hermes↔cc↔re 统一接口
+- P1: cc 用 Aider 编辑策略改写 Reasonix 代码
 - P2: 混合检索 + wiki-lint
-- Token 优化三层已落地，待设 DEEPSEEK_API_KEY
+- P2: pre-commit verifier
