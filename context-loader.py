@@ -1,11 +1,20 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 """会话上下文加载器v2 — 输出极简摘要（~300 tok）。"""
 
-import json
+import json, os, sys
 from pathlib import Path
 from datetime import datetime
 
-VAULT = Path.home() / "Documents/Obsidian Vault"
+# 自动探测 Vault 路径：先看环境变量，再看 Windows 默认位置，最后用脚本所在目录
+VAULT = Path(os.environ.get("WIKI_PATH", ""))
+if not VAULT.is_dir():
+    VAULT = Path.home() / "Documents/Obsidian Vault"
+if not VAULT.is_dir():
+    VAULT = Path(__file__).resolve().parent
+if not VAULT.is_dir():
+    print(f"ERROR: 找不到 Vault 目录。请设置 WIKI_PATH 或将脚本放在仓库根目录。", file=sys.stderr)
+    exit(1)
 
 def main():
     index = json.loads((VAULT / "wiki-index.json").read_text(encoding="utf-8"))
