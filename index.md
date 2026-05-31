@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-31 | 总页数：37
+> 最后更新：2026-05-31 | 总页数：38
 ## 投资策略
 
 - [[valuation-dca-strategy]] — 估值择时定投策略总览（PE百分位法）
@@ -45,6 +45,7 @@
 - 🆕 [[langgraph-stateful-agents]] — LangGraph 有状态Agent编排（StateGraph+Checkpoint+Human-in-the-loop，三角对比+NΞXUS防作弊流水线）
 - 🆕 [[claude-bug-bounty-security]] — Claude Bug Bounty AI驱动渗透测试（20种漏洞+8Agent+NΞXUS CC安全审查集成）
 - 🆕 [[token-optimization-retro]] — Token优化复盘：飞轮从53万/篇→5万/篇的4项改造
+- 🆕 [[network-fix]] — 终端网络修复：代理环境变量+GitHub CDN直连规则
 - 🆕 [[github-first-rule]] — GitHub First规则：遇难先搜(一周内优先)，不重复造轮子
 - 🆕 [[task-startup-protocol]] — 任务启动协议：预算→确认→执行→签名强制闭环
 - 🆕 [[harbor-llm-stack]] — Harbor 一键LLM栈（零配置启动+NΞXUS多模型统一配置方案）
