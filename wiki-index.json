@@ -27,6 +27,27 @@
     "summary": "600+工具声明式注册（app.json+functions.json）、7层安全检查链（含自然语言权限边界）、向量语义工具发现（pgvector+OpenAI Embedding）、三种认证模式。与MCP互补而非竞争。",
     "size": 20480
   },
+  "autogen-multi-agent-framework": {
+    "file": "concepts/autogen-multi-agent-framework.md",
+    "title": "Microsoft AutoGen 多Agent框架拆解",
+    "tags": ["skill-learning","multi-agent","agent-orchestration","selector","sandbox","agent-upgrade"],
+    "summary": "四大核心能力：Agent对话（Pydantic消息类型+Topic总线）、工具调用（Workbench+AgentTool）、代码沙箱（Docker隔离）、多Agent编排（SelectorGroupChat LLM选发言人+Handoff移交）。A2A vs AutoGen vs NΞXUS 三角对比。",
+    "size": 18432
+  },
+  "qodo-cover-ai-testing": {
+    "file": "concepts/qodo-cover-ai-testing.md",
+    "title": "Qodo Cover AI测试自动生成拆解",
+    "tags": ["skill-learning","testing","coverage","ci-cd","agent-upgrade"],
+    "summary": "AI测试生成算法（Jinja2+TOML Prompt模板+Pydantic Schema约束YAML输出）、覆盖率提升策略（Cobertura/LCOV/JaCoCo+keep/rollback逻辑）、Agent模式（CoverAgent→Generator+Validator闭环）。NΞXUS CC产出自动验证方案。",
+    "size": 16384
+  },
+  "crewai-role-based-agents": {
+    "file": "concepts/crewai-role-based-agents.md",
+    "title": "crewAI 角色化多Agent框架拆解",
+    "tags": ["skill-learning","multi-agent","role-based","agent-orchestration","agent-upgrade"],
+    "summary": "Role/Goal/Backstory角色三要素+YAML声明式配置+Sequential/Hierarchical双编排+Crews/Flows双架构。Backstory用叙事替代指令，比System Prompt更自然。NΞXUS可直接借鉴：CC Backstory模板+Flow防作弊流水线。",
+    "size": 6622
+  },
   "a2a-agent-protocol": {
     "file": "concepts\\a2a-agent-protocol.md",
     "title": "a2a-agent-protocol",

@@ -3,6 +3,27 @@
 > 所有 wiki 操作按时间记录。仅追加。
 > 格式：`## [YYYY-MM-DD] 操作 | 主题`
 
+## [2026-05-31] create | Microsoft AutoGen 多Agent框架拆解
+
+- 拆解 microsoft/autogen（⭐58,553）
+- 写入 concepts/autogen-multi-agent-framework.md
+- 更新 index.md（总页数 25→26）
+- 深度分析五大核心能力：Agent对话模式（增量状态+发布订阅）、工具调用（Tool协议+Workbench抽象）、代码执行沙箱（Docker隔离+审批函数）、多Agent编排（Selector/RoundRobin/AgentTool/Handoff）、终止条件（可组合状态机）
+- 重点输出：与 A2A 三角对比 + NΞXUS Hermes↔CC 通信升级方案（4个阶段：Pydantic消息类型 → asyncio Queue Topic总线 → Selector编排+Handoff → 代码沙箱）
+- 关键发现：SelectorGroupChat的LLM选发言人比A2A被动等待更适合NΞXUS主动式多Agent编排；AgentTool模式让Agent可被其他Agent当工具调用
+- 风险提示：AutoGen已进入maintenance mode，核心逻辑可借鉴但新功能应参考MAF
+- 数据来源：GitHub raw（README + 9个核心源文件：AssistantAgent / BaseGroupChat / SelectorGroupChat / RoundRobinGroupChat / CodeExecutorAgent / messages / CoreAgent / Handoff / BaseTool）
+
+## [2026-05-31] create | qodo-cover AI测试生成拆解
+
+- 拆解 qodo-ai/qodo-cover（⭐5,408）
+- 写入 concepts/qodo-cover-ai-testing.md
+- 更新 index.md（总页数 25→26）
+- 深度分析四大核心能力：CoverAgent 编排器、迭代式测试生成、覆盖率解析闭环、全仓模式
+- 重点输出 NΞXUS CC 产出验证流程：CC 写完代码 → Hermes 编排 qodo-cover → 自动生成测试 → 验证覆盖率 ≥ 80%
+- 成本：约 $0.001/次（gpt-4o-mini），Record/Replay 后零成本
+- 数据来源：GitHub raw（README + pyproject.toml + cover_agent/*.py + prompt TOML + docs）
+
 ## [2026-05-31] create | code-review-graph 拆解
 
 - 拆解 tirth8205/code-review-graph（⭐17,731）
@@ -12,6 +33,15 @@
 - 爆炸半径 100% 召回 + 38x–528x token 压缩 + 12+ 平台自动安装
 - 输出 Hermes pre-commit verifier 三阶段落地路线
 - 数据来源：GitHub API（仓库元数据 + README + graph.py）+ PyPI 页面
+
+## [2026-05-31] create | 飞轮第2轮：autogen + qodo-cover + crewAI 三连拆
+
+- autogen（⭐58,553）→ concepts/autogen-multi-agent-framework.md
+- qodo-cover（⭐5,408）→ concepts/qodo-cover-ai-testing.md
+- crewAI（⭐52,494）→ concepts/crewai-role-based-agents.md（手动拆解，子Agent超时）
+- 更新 index.md（总页数 24→27）、hot.md、log.md
+- 深度分析：SelectorGroupChat 编排、覆盖率闭环、Role/Goal/Backstory 角色模式
+- NΞXUS 对接：Selector编排+Backstory模板+Flow防作弊流水线+测试自动验证
 
 ## [2026-05-31] create | ACI 工具调用平台拆解
 

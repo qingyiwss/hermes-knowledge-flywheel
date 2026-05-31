@@ -2,8 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-31 | 总页数：24
-
+> 最后更新：2026-05-31 | 总页数：27
 ## 投资策略
 
 - [[valuation-dca-strategy]] — 估值择时定投策略总览（PE百分位法）
@@ -38,6 +37,9 @@
 - 🆕 [[agent-governance-toolkit]] — Microsoft Agent Governance Toolkit 拆解（策略执行+零信任身份+沙箱隔离）
 - 🆕 [[code-review-graph]] — code-review-graph 代码图谱（Tree-sitter AST + GraphRAG + MCP 30工具 + 秒级增量更新）
 - 🆕 [[aci-tool-calling-platform]] — ACI 600+工具调用平台（声明式注册+7层安全检查+向量发现）
+- 🆕 [[autogen-multi-agent-framework]] — Microsoft AutoGen 多Agent框架拆解（Selector编排+工具Workbench+代码沙箱+Handoff，与A2A对比，NΞXUS通信升级方案）
+- 🆕 [[qodo-cover-ai-testing]] — Qodo Cover AI测试自动生成（迭代生成+覆盖率闭环+NΞXUS CC验证集成）
+- 🆕 [[crewai-role-based-agents]] — crewAI 角色化多Agent框架（Role/Goal/Backstory+双编排，NΞXUS升级方案）
 
 ## 工具/系统
 
