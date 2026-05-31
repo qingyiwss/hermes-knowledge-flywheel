@@ -3,6 +3,29 @@
 > 所有 wiki 操作按时间记录。仅追加。
 > 格式：`## [YYYY-MM-DD] 操作 | 主题`
 
+## [2026-05-31] create | LangGraph 有状态Agent编排框架拆解
+
+- 拆解 langchain-ai/langgraph（⭐33,415）
+- 写入 concepts/langgraph-stateful-agents.md
+- 更新 index.md（总页数 27→28）
+- 深度分析五大核心能力：StateGraph Reducer 状态管理（Annotated 标注合并策略）、条件分支（Literal 类型安全路由）、循环（环形边+Send Map-Reduce 并行）、Human-in-the-loop（interrupt+Command/resume）、Checkpointer 持久化（每步自动快照+时间旅行）
+- 重点输出：langgraph 有状态编排 vs crewAI 角色化编排 vs autogen 消息编排三角对比
+- NΞXUS 防作弊流水线对接：每条验证步骤 = 一个 Graph 节点 + 每步 Checkpoint 快照 + 失败回滚到上一个 Checkpoint
+- 关键发现：LangGraph 的 Reducer 设计区别于所有 Agent 框架——不是管 Agent 怎么写，而是管写入同一状态时怎么合并；Checkpoint 是 Human-in-the-loop 的绝对前提
+- 数据来源：GitHub raw（README + state.py 1964行 + types.py + checkpoint/base/__init__.py）
+
+## [2026-05-31] create | Microsoft AutoGen 多Agent框架拆解
+
+- 拆解 shuvonsec/claude-bug-bounty（⭐2,340）
+- 写入 concepts/claude-bug-bounty-security.md
+- 更新 index.md（总页数 27→28）
+- 深度分析六大核心能力：20种Web2漏洞检测类型、10种Web3合约漏洞、8个AI Agent、23个Slash命令、8阶段侦察引擎、5阶段非线性渗透工作流
+- 提取核心流程：侦察信息收集（50+工具编排）→ 自主渗透测试（5阶段+autopilot三种模式）→ 漏洞验证（7问门控+4道提交关）→ 报告生成（报告模板+CVSS 3.1）
+- 重点输出 NΞXUS CC 代码安全审查集成方案：CC 写完代码 → Hermes 自动触发安全扫描 → 门控决策（PASS/WARN/FAIL）→ 结合 qodo-cover + code-review-graph 形成完整验收流水线
+- Hermes Skill 封装：cc-security-gate（静态分析+密钥检测+依赖漏洞+代码模式）
+- 借用机制：7问门控、密钥检测管道、CVE情报、semgrep多语言规则、永不提交清单、条件有效链、认证感知扫描
+- 数据来源：GitHub raw（README + SKILL.md ×3 + hunt.py + recon_engine.sh + vuln_scanner.sh + triage-validation SKILL.md）
+
 ## [2026-05-31] create | Microsoft AutoGen 多Agent框架拆解
 
 - 拆解 microsoft/autogen（⭐58,553）
@@ -33,6 +56,14 @@
 - 爆炸半径 100% 召回 + 38x–528x token 压缩 + 12+ 平台自动安装
 - 输出 Hermes pre-commit verifier 三阶段落地路线
 - 数据来源：GitHub API（仓库元数据 + README + graph.py）+ PyPI 页面
+
+## [2026-05-31] create | 飞轮第3轮：langgraph + claude-bug-bounty + harbor 三连拆
+
+- langgraph（⭐33,415）→ concepts/langgraph-stateful-agents.md（子Agent拆解）
+- claude-bug-bounty（⭐2,340）→ concepts/claude-bug-bounty-security.md（子Agent拆解）
+- harbor（⭐3,017）→ concepts/harbor-llm-stack.md（手动拆解，raw超时）
+- 更新 index.md（总页数 27→29）、hot.md、log.md、wiki-index.json
+- NΞXUS 对接：StateGraph 防作弊流水线 + CC安全审查门控 + 模型统一配置层
 
 ## [2026-05-31] create | 飞轮第2轮：autogen + qodo-cover + crewAI 三连拆
 

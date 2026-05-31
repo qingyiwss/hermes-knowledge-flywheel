@@ -2,51 +2,134 @@
   "nexus-dual-engine": {
     "file": "concepts/nexus-dual-engine.md",
     "title": "NΞXUS 双引擎 — Hermes + Claude Code 硬分工与防作弊机制",
-    "tags": ["hermes","claude-code","workflow","multi-agent","quality-gate"],
+    "tags": [
+      "hermes",
+      "claude-code",
+      "workflow",
+      "multi-agent",
+      "quality-gate"
+    ],
     "summary": "双 Agent 协作的致命陷阱是责任模糊。用「产出类型」一刀切划清边界：产出=代码变更→CC，产出≠代码变更→Hermes。4阶段防作弊工作流：需求理解（5问）→拆解分发→三重验证（物证/功能/Git溯源）→终验报告。",
     "size": 3168
   },
   "agent-governance-toolkit": {
     "file": "concepts/agent-governance-toolkit.md",
     "title": "Microsoft Agent Governance Toolkit 拆解",
-    "tags": ["skill-learning","agent-security","policy-engine","zero-trust","sandbox","agent-upgrade"],
+    "tags": [
+      "skill-learning",
+      "agent-security",
+      "policy-engine",
+      "zero-trust",
+      "sandbox",
+      "agent-upgrade"
+    ],
     "summary": "策略执行（9运算符+优先级+deny不可覆盖）、零信任身份（Ed25519 DID+5维信任分+时间衰减）、沙箱隔离（四环模型+Token Bucket+Kill Switch+哈希链审计）。防作弊从规则表升级为代码强制。",
     "size": 14848
   },
   "code-review-graph": {
     "file": "concepts/code-review-graph.md",
     "title": "code-review-graph 代码图谱拆解",
-    "tags": ["skill-learning","code-quality","graphrag","mcp","ast","agent-upgrade"],
+    "tags": [
+      "skill-learning",
+      "code-quality",
+      "graphrag",
+      "mcp",
+      "ast",
+      "agent-upgrade"
+    ],
     "summary": "Tree-sitter AST解析（30+语言）+ GraphRAG知识图谱（8边类型+3级置信度+Leiden社区检测）+ MCP 30工具+5Prompt+增量更新<2秒。爆炸半径100%召回，38x-528x token压缩。",
     "size": 17132
   },
   "aci-tool-calling-platform": {
     "file": "concepts/aci-tool-calling-platform.md",
     "title": "ACI 600+工具调用平台拆解",
-    "tags": ["skill-learning","tool-calling","mcp","security","agent-upgrade"],
+    "tags": [
+      "skill-learning",
+      "tool-calling",
+      "mcp",
+      "security",
+      "agent-upgrade"
+    ],
     "summary": "600+工具声明式注册（app.json+functions.json）、7层安全检查链（含自然语言权限边界）、向量语义工具发现（pgvector+OpenAI Embedding）、三种认证模式。与MCP互补而非竞争。",
     "size": 20480
   },
   "autogen-multi-agent-framework": {
     "file": "concepts/autogen-multi-agent-framework.md",
     "title": "Microsoft AutoGen 多Agent框架拆解",
-    "tags": ["skill-learning","multi-agent","agent-orchestration","selector","sandbox","agent-upgrade"],
+    "tags": [
+      "skill-learning",
+      "multi-agent",
+      "agent-orchestration",
+      "selector",
+      "sandbox",
+      "agent-upgrade"
+    ],
     "summary": "四大核心能力：Agent对话（Pydantic消息类型+Topic总线）、工具调用（Workbench+AgentTool）、代码沙箱（Docker隔离）、多Agent编排（SelectorGroupChat LLM选发言人+Handoff移交）。A2A vs AutoGen vs NΞXUS 三角对比。",
     "size": 18432
   },
   "qodo-cover-ai-testing": {
     "file": "concepts/qodo-cover-ai-testing.md",
     "title": "Qodo Cover AI测试自动生成拆解",
-    "tags": ["skill-learning","testing","coverage","ci-cd","agent-upgrade"],
+    "tags": [
+      "skill-learning",
+      "testing",
+      "coverage",
+      "ci-cd",
+      "agent-upgrade"
+    ],
     "summary": "AI测试生成算法（Jinja2+TOML Prompt模板+Pydantic Schema约束YAML输出）、覆盖率提升策略（Cobertura/LCOV/JaCoCo+keep/rollback逻辑）、Agent模式（CoverAgent→Generator+Validator闭环）。NΞXUS CC产出自动验证方案。",
     "size": 16384
   },
   "crewai-role-based-agents": {
     "file": "concepts/crewai-role-based-agents.md",
     "title": "crewAI 角色化多Agent框架拆解",
-    "tags": ["skill-learning","multi-agent","role-based","agent-orchestration","agent-upgrade"],
+    "tags": [
+      "skill-learning",
+      "multi-agent",
+      "role-based",
+      "agent-orchestration",
+      "agent-upgrade"
+    ],
     "summary": "Role/Goal/Backstory角色三要素+YAML声明式配置+Sequential/Hierarchical双编排+Crews/Flows双架构。Backstory用叙事替代指令，比System Prompt更自然。NΞXUS可直接借鉴：CC Backstory模板+Flow防作弊流水线。",
     "size": 6622
+  },
+  "langgraph-stateful-agents": {
+    "file": "concepts/langgraph-stateful-agents.md",
+    "title": "LangGraph 有状态Agent编排拆解",
+    "tags": [
+      "skill-learning",
+      "state-machine",
+      "agent-orchestration",
+      "checkpoint",
+      "agent-upgrade"
+    ],
+    "summary": "StateGraph状态管理（Annotated Reducer合并策略）+条件分支+循环（Send API Map-Reduce）+Human-in-the-loop（interrupt/Command resume）+Checkpointer持久化（时间旅行）。三角对比+防作弊流水线StateGraph建模。",
+    "size": 17435
+  },
+  "claude-bug-bounty-security": {
+    "file": "concepts/claude-bug-bounty-security.md",
+    "title": "Claude Bug Bounty AI渗透测试拆解",
+    "tags": [
+      "skill-learning",
+      "security",
+      "penetration-testing",
+      "agent-upgrade"
+    ],
+    "summary": "20种Web2漏洞+8个AI Agent分工（侦察/验证/报告/自动/链式）+7问门控机制+认证感知扫描。NΞXUS CC安全审查集成方案。",
+    "size": 24576
+  },
+  "harbor-llm-stack": {
+    "file": "concepts/harbor-llm-stack.md",
+    "title": "Harbor 一键LLM栈拆解",
+    "tags": [
+      "skill-learning",
+      "llm-stack",
+      "model-management",
+      "devops",
+      "agent-upgrade"
+    ],
+    "summary": "一键启动完整LLM环境（推理+Embedding+向量DB+RAG+API网关）。内置LiteLLM作为网关组件，两者互补。NΞXUS借鉴：统一模型配置层+模型热切换。",
+    "size": 4623
   },
   "a2a-agent-protocol": {
     "file": "concepts\\a2a-agent-protocol.md",

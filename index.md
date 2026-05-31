@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-31 | 总页数：27
+> 最后更新：2026-05-31 | 总页数：29
 ## 投资策略
 
 - [[valuation-dca-strategy]] — 估值择时定投策略总览（PE百分位法）
@@ -40,6 +40,9 @@
 - 🆕 [[autogen-multi-agent-framework]] — Microsoft AutoGen 多Agent框架拆解（Selector编排+工具Workbench+代码沙箱+Handoff，与A2A对比，NΞXUS通信升级方案）
 - 🆕 [[qodo-cover-ai-testing]] — Qodo Cover AI测试自动生成（迭代生成+覆盖率闭环+NΞXUS CC验证集成）
 - 🆕 [[crewai-role-based-agents]] — crewAI 角色化多Agent框架（Role/Goal/Backstory+双编排，NΞXUS升级方案）
+- 🆕 [[langgraph-stateful-agents]] — LangGraph 有状态Agent编排（StateGraph+Checkpoint+Human-in-the-loop，三角对比+NΞXUS防作弊流水线）
+- 🆕 [[claude-bug-bounty-security]] — Claude Bug Bounty AI驱动渗透测试（20种漏洞+8Agent+NΞXUS CC安全审查集成）
+- 🆕 [[harbor-llm-stack]] — Harbor 一键LLM栈（零配置启动+NΞXUS多模型统一配置方案）
 
 ## 工具/系统
 
