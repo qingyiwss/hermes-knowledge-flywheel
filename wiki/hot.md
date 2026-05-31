@@ -1,12 +1,12 @@
 # Hot Cache — 最新上下文
-> 更新: 2026-05-29 · Wiki: 22篇 · P1: Nexus监控/A2A | P2: wiki-lint/混合检索
+> 更新: 2026-05-31 · Wiki: 24篇 · P1: 飞轮第1轮完成 | P2: 第2轮飞轮
 
 ## 最近飞轮
+- 🆕 第1轮完成：agent-governance-toolkit + code-review-graph + aci 三连拆
+- 🆕 双引擎分工落地: Hermes + Claude Code 硬分工 + 4阶段防作弊工作流
 - 需求分析三件套: doorstop(Git需求管理) + MetaGPT(SOP多Agent) + Robot Framework(验收测试)
-- CC集成完成: hermes-cc.sh 一键调用
-- Nexus监控: 独立项目D:/nexus, 零侵入+SSE实时面板
 
 ## Active Threads
-- P1: Nexus独立监控完善(LibreHardwareMonitor接入温度/风扇)
-- P1: A2A协议落地
-- P2: wiki-lint + 混合检索
+- P1: 第2轮飞轮扫描执行中
+- P2: 双引擎防作弊验证机制完善（借鉴 agent-governance-toolkit）
+- P3: wiki-lint + 混合检索

@@ -1,0 +1,34 @@
+{
+  "members": {
+    "hermes": {
+      "status": "idle",
+      "task": "",
+      "detail": "",
+      "started": null,
+      "history": [],
+      "total_cost": 0.0,
+      "total_tasks": 0,
+      "total_files": 0
+    },
+    "cc": {
+      "status": "idle",
+      "task": "",
+      "detail": "",
+      "started": null,
+      "history": [],
+      "total_cost": 0.0,
+      "total_tasks": 0,
+      "total_files": 0
+    },
+    "re": {
+      "status": "idle",
+      "task": "",
+      "detail": "",
+      "started": null,
+      "history": [],
+      "total_cost": 0.0,
+      "total_tasks": 0,
+      "total_files": 0
+    }
+  }
+}

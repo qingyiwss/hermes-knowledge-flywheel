@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-29 | 总页数：20
+> 最后更新：2026-05-31 | 总页数：24
 
 ## 投资策略
 
@@ -13,6 +13,7 @@
 ## AI/自媒体
 
 - [[ai-commander-system]] — AI 指挥官：任务拆解与团队协作
+- 🆕 [[nexus-dual-engine]] — NΞXUS 双引擎：Hermes + Claude Code 硬分工与防作弊机制
 - 🆕 [[harness-engineering]] — Harness 工程：Agent 产品 = Model + Harness
 - 🆕 [[agent-reach-internet]] — Agent Reach：给 AI 装上互联网之眼
 - 🆕 [[model-router]] — 智能模型路由：按复杂度自动选模型
@@ -34,6 +35,9 @@
 - 🆕 [[doorstop-requirements-management]] — Doorstop 基于Git的轻量需求管理（629⭐）
 - 🆕 [[metagpt-multi-agent-requirements]] — MetaGPT 多Agent需求→软件全流程（68K⭐）
 - 🆕 [[robotframework-atdd-validation]] — Robot Framework 验收测试驱动需求验证（11.7K⭐）
+- 🆕 [[agent-governance-toolkit]] — Microsoft Agent Governance Toolkit 拆解（策略执行+零信任身份+沙箱隔离）
+- 🆕 [[code-review-graph]] — code-review-graph 代码图谱（Tree-sitter AST + GraphRAG + MCP 30工具 + 秒级增量更新）
+- 🆕 [[aci-tool-calling-platform]] — ACI 600+工具调用平台（声明式注册+7层安全检查+向量发现）
 
 ## 工具/系统
 

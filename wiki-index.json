@@ -1,4 +1,32 @@
 {
+  "nexus-dual-engine": {
+    "file": "concepts/nexus-dual-engine.md",
+    "title": "NΞXUS 双引擎 — Hermes + Claude Code 硬分工与防作弊机制",
+    "tags": ["hermes","claude-code","workflow","multi-agent","quality-gate"],
+    "summary": "双 Agent 协作的致命陷阱是责任模糊。用「产出类型」一刀切划清边界：产出=代码变更→CC，产出≠代码变更→Hermes。4阶段防作弊工作流：需求理解（5问）→拆解分发→三重验证（物证/功能/Git溯源）→终验报告。",
+    "size": 3168
+  },
+  "agent-governance-toolkit": {
+    "file": "concepts/agent-governance-toolkit.md",
+    "title": "Microsoft Agent Governance Toolkit 拆解",
+    "tags": ["skill-learning","agent-security","policy-engine","zero-trust","sandbox","agent-upgrade"],
+    "summary": "策略执行（9运算符+优先级+deny不可覆盖）、零信任身份（Ed25519 DID+5维信任分+时间衰减）、沙箱隔离（四环模型+Token Bucket+Kill Switch+哈希链审计）。防作弊从规则表升级为代码强制。",
+    "size": 14848
+  },
+  "code-review-graph": {
+    "file": "concepts/code-review-graph.md",
+    "title": "code-review-graph 代码图谱拆解",
+    "tags": ["skill-learning","code-quality","graphrag","mcp","ast","agent-upgrade"],
+    "summary": "Tree-sitter AST解析（30+语言）+ GraphRAG知识图谱（8边类型+3级置信度+Leiden社区检测）+ MCP 30工具+5Prompt+增量更新<2秒。爆炸半径100%召回，38x-528x token压缩。",
+    "size": 17132
+  },
+  "aci-tool-calling-platform": {
+    "file": "concepts/aci-tool-calling-platform.md",
+    "title": "ACI 600+工具调用平台拆解",
+    "tags": ["skill-learning","tool-calling","mcp","security","agent-upgrade"],
+    "summary": "600+工具声明式注册（app.json+functions.json）、7层安全检查链（含自然语言权限边界）、向量语义工具发现（pgvector+OpenAI Embedding）、三种认证模式。与MCP互补而非竞争。",
+    "size": 20480
+  },
   "a2a-agent-protocol": {
     "file": "concepts\\a2a-agent-protocol.md",
     "title": "a2a-agent-protocol",

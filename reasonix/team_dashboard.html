@@ -1,0 +1,55 @@
+<\!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reasonix 团队看板</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0d1117; color: #c9d1d9; padding: 2rem; }
+h1 { font-size: 1.5rem; margin-bottom: 1.5rem; color: #58a6ff; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem; }
+.card { background: #161b22; border: 1px solid #30363d; border-radius: 8px; padding: 1.25rem; }
+.card h2 { font-size: 1.1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+.badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+.badge.idle { background: #238636; color: #fff; }
+.badge.working { background: #1f6feb; color: #fff; }
+.badge.done { background: #d29922; color: #fff; }
+.badge.error { background: #da3633; color: #fff; }
+.stat { margin: 0.5rem 0; font-size: 0.85rem; color: #8b949e; }
+.stat span { color: #c9d1d9; }
+.history { margin-top: 0.75rem; padding-top: 0.75rem; border-top: 1px solid #30363d; }
+.history h3 { font-size: 0.8rem; color: #8b949e; margin-bottom: 0.4rem; }
+.history-item { font-size: 0.78rem; color: #8b949e; padding: 0.2rem 0; }
+.footer { margin-top: 2rem; font-size: 0.75rem; color: #484f58; text-align: center; }
+</style>
+</head>
+<body>
+<h1>&#x1F9E0; Reasonix 团队看板</h1>
+<div class="cards" id="board"></div>
+<div class="footer">自动刷新 &middot; <span id="ts"></span></div>
+<script>
+/* ↓ DATA_SENTINEL — team_status.py 自动替换此注释和下一行的 JSON ↓ */
+window.__DATA__ = {"re": {"status": "idle", "task": "", "detail": "", "started": null, "history": [], "total_cost": 0.0, "total_tasks": 0, "total_files": 0}, "hermes": {"status": "idle", "task": "", "detail": "", "started": null, "history": [], "total_cost": 0.0, "total_tasks": 0, "total_files": 0}, "cc": {"status": "idle", "task": "", "detail": "", "started": null, "history": [], "total_cost": 0.0, "total_tasks": 0, "total_files": 0}};
+/* ↑ DATA_SENTINEL_END ↑ */
+function render() {
+  var d = window.__DATA__, b = document.getElementById('board');
+  var s = {idle:'&#x1F7E2; &#x7A7A;&#x95F2;',working:'&#x1F535; &#x5DE5;&#x4F5C;&#x4E2D;',done:'&#x1F7E1; &#x5B8C;&#x6210;',error:'&#x1F534; &#x9519;&#x8BEF;'};
+  b.innerHTML = '';
+  for (var m in d) {
+    var x = d[m], h = x.history || [], last = h.length ? h[h.length-1] : null;
+    b.innerHTML += '<div class="card"><h2>'+m+' <span class="badge '+x.status+'">'+s[x.status]+'</span></h2>'+
+      '<div class="stat">&#x4EFB;&#x52A1;: <span>'+(x.task||'-')+'</span></div>'+
+      '<div class="stat">&#x8BE6;&#x60C5;: <span>'+(x.detail||'-')+'</span></div>'+
+      (x.started ? '<div class="stat">&#x5F00;&#x59CB;: <span>'+new Date(x.started).toLocaleString()+'</span></div>' : '')+
+      '<div class="stat">&#x8D39;&#x7528;: <span>$'+x.total_cost.toFixed(4)+'</span>  < /dev/null |  &#x4EFB;&#x52A1;: <span>'+x.total_tasks+'</span> | &#x6587;&#x4EF6;: <span>'+x.total_files+'</span></div>'+
+      (last ? '<div class="history"><h3>&#x6700;&#x8FD1;&#x5B8C;&#x6210;</h3><div class="history-item">'+last.task+' &mdash; '+last.detail+' ('+last.elapsed+')</div></div>' : '')+
+    '</div>';
+  }
+  document.getElementById('ts').textContent = new Date().toLocaleString();
+}
+render();
+setInterval(render, 3000);
+</script>
+</body>
+</html>

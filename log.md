@@ -3,6 +3,42 @@
 > 所有 wiki 操作按时间记录。仅追加。
 > 格式：`## [YYYY-MM-DD] 操作 | 主题`
 
+## [2026-05-31] create | code-review-graph 拆解
+
+- 拆解 tirth8205/code-review-graph（⭐17,731）
+- 写入 concepts/code-review-graph.md
+- 更新 index.md（总页数 22→23）
+- 深度分析四大核心能力：Tree-sitter AST 解析、GraphRAG 知识图谱、MCP 30 工具、秒级增量更新
+- 爆炸半径 100% 召回 + 38x–528x token 压缩 + 12+ 平台自动安装
+- 输出 Hermes pre-commit verifier 三阶段落地路线
+- 数据来源：GitHub API（仓库元数据 + README + graph.py）+ PyPI 页面
+
+## [2026-05-31] create | ACI 工具调用平台拆解
+
+- 拆解 aipotheosis-labs/aci（⭐4,793）
+- 写入 concepts/aci-tool-calling-platform.md
+- 更新 index.md（总页数 23→24）、hot.md
+- 600+工具声明式注册（app.json + functions.json）、7层安全检查链、向量语义工具发现
+- 与 MCP 8 维对比，结论：互补而非竞争
+- Hermes 借鉴方案：声明式注册 + visible/invisible 分离 + NL 权限边界
+- 数据来源：GitHub API（20+ 文件：README + main.py + acl.py + processor.py 等）
+
+## [2026-05-31] create | Agent Governance Toolkit 拆解
+
+- 拆解 microsoft/agent-governance-toolkit（⭐3,481）
+- 写入 concepts/agent-governance-toolkit.md
+- 更新 index.md（总页数 21→22）
+- 深度分析三大核心能力：策略执行、零信任身份、沙箱隔离
+- 输出 NΞXUS 双引擎防作弊对接方案（4 Phase）
+- 数据来源：README + 3 份 RFC 2119 规范（Policy Engine / Identity & Trust / Hypervisor） + OWASP 架构文档
+
+## [2026-05-31] create | 双引擎职责分工
+
+- 内部沉淀：NΞXUS Hermes + Claude Code 硬分工与防作弊机制
+- 写入 concepts/nexus-dual-engine.md
+- 更新 index.md（总页数 20→21）、hot.md、growth-log.md、wiki-index.json
+- 4 阶段工作流 + 三重验证 + 防作弊规则表
+
 ## [2026-05-29] create | Wiki 初始化
 - 在 Obsidian Vault 中创建 wiki 结构
 - SCHEMA.md：定义三大领域（投资/AI自媒体/公司运营）
