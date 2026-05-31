@@ -3,6 +3,7 @@ id: 20260529-token-smart-pipeline
 title: Token Smart Pipeline — 三层优化引擎落地
 tags: [skill-learning, automation, agent-upgrade, token-optimization, 自研]
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

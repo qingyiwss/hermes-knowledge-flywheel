@@ -4,6 +4,7 @@ title: GPTCache LLM 语义缓存拆解
 tags: [skill-learning, automation, agent-upgrade, token-optimization]
 source_url: https://github.com/zilliztech/GPTCache
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

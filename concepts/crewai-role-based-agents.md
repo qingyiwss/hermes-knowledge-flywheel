@@ -4,6 +4,7 @@ title: crewAI 角色化多Agent框架拆解 — 角色定义+任务编排+NΞXUS
 tags: [skill-learning, multi-agent, role-based, agent-orchestration, agent-upgrade]
 source_url: https://github.com/crewAIInc/crewAI
 date_created: 2026-05-31
+updated: 2026-05-31
 confidence: high
 ---
 

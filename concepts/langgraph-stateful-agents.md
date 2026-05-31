@@ -4,6 +4,7 @@ title: LangGraph 有状态Agent编排框架拆解 — StateGraph状态机+Checkp
 tags: [hermes, agent-upgrade, state-management, checkpoint, workflow, anti-cheat, multi-agent, orchestration]
 source_url: https://github.com/langchain-ai/langgraph
 date_created: 2026-05-31
+updated: 2026-05-31
 confidence: high
 ---
 

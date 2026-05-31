@@ -1,3 +1,10 @@
+---
+title: 钩织毛线玩具外贸市场调研
+created: 2026-05-31
+updated: 2026-05-31
+tags: [market-research, ecommerce, handmade]
+---
+
 # 钩织毛线玩具外贸市场调研
 
 ## 市场基本面

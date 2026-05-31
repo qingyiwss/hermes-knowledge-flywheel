@@ -1,6 +1,8 @@
 ---
 id: 20260529-aider
 tags: [skill-learning, automation, agent-upgrade, cc-capability]
+created: 2026-05-29
+updated: 2026-05-29
 ---
 
 # Aider AI 结对编程

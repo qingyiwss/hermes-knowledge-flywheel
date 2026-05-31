@@ -1,3 +1,10 @@
+---
+title: 欧美玩具认证指南
+created: 2026-05-31
+updated: 2026-05-31
+tags: [certification, ecommerce, compliance]
+---
+
 # 欧美玩具认证指南（钩织毛线玩具）
 
 ## 🇺🇸 美国 — CPC 认证

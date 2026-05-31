@@ -4,6 +4,7 @@ title: GitButler 虚拟分支协作架构拆解
 tags: [skill-learning, automation, agent-upgrade, team-collaboration]
 source_url: https://github.com/gitbutlerapp/gitbutler
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

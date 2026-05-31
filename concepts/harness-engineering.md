@@ -4,6 +4,7 @@ title: Harness 工程 — Agent 产品的正确构建范式
 tags: [skill-learning, agent-architecture, harness, claude-code]
 source_url: https://github.com/shareAI-lab/learn-claude-code
 date_created: 2026-05-29
+updated: 2026-05-29
 confidence: high
 ---
 

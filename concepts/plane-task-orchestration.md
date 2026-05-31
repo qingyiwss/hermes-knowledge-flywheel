@@ -4,6 +4,7 @@ title: Plane 任务编排与分配架构拆解
 tags: [skill-learning, automation, agent-upgrade, team-collaboration]
 source_url: https://github.com/makeplane/plane
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

@@ -129,3 +129,15 @@
 - 能力审计扫描：claude-obsidian（⭐5.7K）→ [[claude-obsidian-architecture]]
 - 知识飞轮升级到 v2.0：新增 Hot Cache、Wiki Lint、Delta 追踪、方法论路由
 - 修复 GitHub 推送流程：诊断 Clash 代理阻断 api.github.com，创建 github-push-china skill
+
+## [2026-05-31] 重构双引擎 | NΞXUS
+
+**操作**：重写 nexus-dual-engine.md，把 Hermes 和 Claude Code 的职责从之前的"按产出类型分"改为"按角色分"：
+- Hermes = 理解者 + 调度者 + 验收者（8项硬职责）
+- Claude Code = 执行者（6项硬职责）
+- 加入"一票否决模糊地带"：看到"优化一下/搞定/类似xxx/你看着办" → 追问不猜测
+- 加入防作弊规则表：违规→惩罚
+
+**原因**：之前的硬分工只看"产出是代码还是非代码"，但关键问题是 Hermes 没理解清楚需求就分发任务，导致 CC 乱做。
+
+**效果**：现在有明确的 4 阶段流程，阶段 0 强制 Hermes 确认 5 问后才能进入下一阶段。

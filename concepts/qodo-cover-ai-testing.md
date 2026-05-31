@@ -4,6 +4,7 @@ title: Qodo Cover AI测试生成与覆盖率提升拆解
 tags: [skill-learning, automation, agent-upgrade, testing, ci-cd-integration]
 source_url: https://github.com/qodo-ai/qodo-cover
 date_created: 2026-05-31
+updated: 2026-05-31
 last_updated: 2026-05-31
 ---
 

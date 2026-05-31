@@ -4,6 +4,7 @@ title: MetaGPT 多Agent协作框架拆解
 tags: [skill-learning, automation, agent-upgrade, team-collaboration]
 source_url: https://github.com/geekan/MetaGPT
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

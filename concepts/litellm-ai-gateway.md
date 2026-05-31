@@ -4,6 +4,7 @@ title: LiteLLM AI 网关成本优化拆解
 tags: [skill-learning, automation, agent-upgrade, token-optimization]
 source_url: https://github.com/BerriAI/litellm
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

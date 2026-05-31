@@ -4,6 +4,7 @@ title: 智能模型路由 — 根据复杂度自动选模型
 tags: [skill-learning, model-routing, cost-optimization, agent-upgrade]
 source_url: https://github.com/0xrdan/claude-router
 date_created: 2026-05-29
+updated: 2026-05-29
 confidence: high
 ---
 

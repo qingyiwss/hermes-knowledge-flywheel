@@ -4,6 +4,7 @@ title: claude-obsidian 知识管理架构拆解
 tags: [skill-learning, automation, agent-upgrade, knowledge-management]
 source_url: https://github.com/AgriciDaniel/claude-obsidian
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

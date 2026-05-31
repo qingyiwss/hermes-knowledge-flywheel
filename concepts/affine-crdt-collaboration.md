@@ -4,6 +4,7 @@ title: AFFiNE 知识协作架构拆解
 tags: [skill-learning, automation, agent-upgrade, team-collaboration]
 source_url: https://github.com/toeverything/AFFiNE
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

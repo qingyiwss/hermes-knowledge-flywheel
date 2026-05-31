@@ -4,6 +4,7 @@ title: Microsoft Agent Governance Toolkit 拆解 — 策略执行、零信任身
 tags: [hermes, agent-upgrade, security, governance, workflow, multi-agent]
 source_url: https://github.com/microsoft/agent-governance-toolkit
 date_created: 2026-05-31
+updated: 2026-05-31
 last_updated: 2026-05-31
 confidence: high
 ---

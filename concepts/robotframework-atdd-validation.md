@@ -4,6 +4,7 @@ title: Robot Framework — 验收测试驱动的需求验证
 tags: [skill-learning, testing, bdd, atdd, qa, ci-cd]
 source_url: https://github.com/robotframework/robotframework
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

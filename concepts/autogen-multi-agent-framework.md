@@ -4,6 +4,7 @@ title: Microsoft AutoGen 多Agent框架拆解 — 对话模式、工具调用、
 tags: [hermes, agent-upgrade, multi-agent, workflow, communication, cc, sandbox, tool-calling]
 source_url: https://github.com/microsoft/autogen
 date_created: 2026-05-31
+updated: 2026-05-31
 last_updated: 2026-05-31
 confidence: high
 ---

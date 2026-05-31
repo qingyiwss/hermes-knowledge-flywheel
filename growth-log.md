@@ -70,3 +70,21 @@
 - **学到了什么：** 需求管理三环节——管理(doorstop Git原生)、分析(MetaGPT SOP驱动)、验证(Robot Framework 关键字驱动)。三者可组合：doorstop存需求→MetaGPT生成实现→Robot验证回归。
 - **能力提升：** Nexus监控系统可借鉴doorstop的文件式任务存储+SOP模板化输出+Robot自动化验收。
 - **下一步：** 将需求分析三件套融入Nexus独立项目设计。
+
+## [2026-05-31] 双引擎重构 + 知识库清理（飞轮 3 轮）
+
+**发现的问题**：
+1. 34 个页面中 28 个缺少 `updated` 字段
+2. 2 个孤立页面未收录到 index
+3. 双引擎分工文档存在模糊地带（按产出分→按角色分才更精确）
+
+**执行的改进**：
+- 重写 nexus-dual-engine：Hermes=理解者+调度者+验收者，CC=执行者
+- 加入防作弊规则表和"一票否决模糊地带"
+- 补全 34 个页面的 frontmatter
+- 收录 crochet-toy-market-research、toy-certification-guide 到 index
+
+**学到的东西**：
+- 代理协作的关键不是分工，是"禁止猜测"。当 Hermes 不完全理解需求时，分发给 CC 的任务必然跑偏
+- 知识库需要定期巡检，指标：①frontmatter 完整度 ②死链 ③孤立页面
+- 用户说的"飞轮"本质是：扫描→修复→反思→再扫描的闭环

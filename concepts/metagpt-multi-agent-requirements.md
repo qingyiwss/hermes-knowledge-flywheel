@@ -4,6 +4,7 @@ title: MetaGPT — 多 Agent 需求→软件全流程
 tags: [skill-learning, ai-agent, requirements, multi-agent, code-generation]
 source_url: https://github.com/FoundationAgents/MetaGPT
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

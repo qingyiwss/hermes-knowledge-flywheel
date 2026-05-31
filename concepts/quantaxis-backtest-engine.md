@@ -4,6 +4,7 @@ title: QUANTAXIS 事件驱动回测引擎剖析
 tags: [skill-learning, automation, agent-upgrade, re-capability]
 source_url: https://github.com/yutiansut/QUANTAXIS
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

@@ -2,6 +2,7 @@
 id: 20260529-a2a
 tags: [skill-learning, automation, agent-upgrade, team-collaboration]
 created: 2026-05-29
+updated: 2026-05-29
 ---
 
 # A2A Agent 通信协议

@@ -4,6 +4,8 @@ domain: ai-security
 subdomain: bug-bounty-automation
 type: concept
 created: 2026-05-31
+updated: 2026-05-31
+
 tags:
   - bug-bounty
   - penetration-testing
@@ -273,7 +275,6 @@ python3 tools/hunt.py --target T --auth-file .private/T-user-b.json
 
 ```
 NΞXUS 双引擎工作流：
-  
   Hermes（编排层）                    Claude Code（执行层）
        │                                      │
        │  1. 发起编码任务                      │

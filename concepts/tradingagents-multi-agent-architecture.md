@@ -4,6 +4,7 @@ title: TradingAgents 多智能体交易架构拆解
 tags: [skill-learning, automation, agent-upgrade, ai-model, strategy]
 source_url: https://github.com/TauricResearch/TradingAgents
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 

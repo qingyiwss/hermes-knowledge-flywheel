@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-31 | 总页数：29
+> 最后更新：2026-05-31 | 总页数：35
 ## 投资策略
 
 - [[valuation-dca-strategy]] — 估值择时定投策略总览（PE百分位法）
@@ -15,6 +15,8 @@
 - 🆕 [[nexus-dual-engine]] — NΞXUS 双引擎：Hermes + Claude Code 硬分工与防作弊机制
 - 🆕 [[harness-engineering]] — Harness 工程：Agent 产品 = Model + Harness
 - 🆕 [[agent-reach-internet]] — Agent Reach：给 AI 装上互联网之眼
+- 🆕 [[crochet-toy-market-research]] — 钩织毛线玩具外贸市场调研（Etsy/独立站/竞争分析）
+- 🆕 [[toy-certification-guide]] — 欧美玩具认证指南（CPC/CE/UKCA 检测要求）
 - 🆕 [[model-router]] — 智能模型路由：按复杂度自动选模型
 - 🆕 [[tradingagents-multi-agent-architecture]] — TradingAgents 多智能体交易框架拆解
 - 🆕 [[claude-obsidian-architecture]] — claude-obsidian 知识管理架构（15 skills + 混合检索）
@@ -42,6 +44,7 @@
 - 🆕 [[crewai-role-based-agents]] — crewAI 角色化多Agent框架（Role/Goal/Backstory+双编排，NΞXUS升级方案）
 - 🆕 [[langgraph-stateful-agents]] — LangGraph 有状态Agent编排（StateGraph+Checkpoint+Human-in-the-loop，三角对比+NΞXUS防作弊流水线）
 - 🆕 [[claude-bug-bounty-security]] — Claude Bug Bounty AI驱动渗透测试（20种漏洞+8Agent+NΞXUS CC安全审查集成）
+- 🆕 [[token-optimization-retro]] — Token优化复盘：飞轮从53万/篇→5万/篇的4项改造
 - 🆕 [[harbor-llm-stack]] — Harbor 一键LLM栈（零配置启动+NΞXUS多模型统一配置方案）
 
 ## 工具/系统

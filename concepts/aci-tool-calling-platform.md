@@ -1,4 +1,6 @@
 ---
+created: 2026-05-31
+updated: 2026-05-31
 title: "ACI — 开源多租户工具调用平台深度拆解"
 category: "AI Infrastructure / Tool Calling Platform"
 tags: ["tool-calling", "mcp", "function-calling", "agent", "oauth2", "multi-tenant", "vibeops", "integration-platform"]

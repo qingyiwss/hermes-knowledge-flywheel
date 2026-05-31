@@ -4,6 +4,7 @@ title: Doorstop — 基于 Git 的轻量需求管理
 tags: [skill-learning, requirements, cli, git-native, devops]
 source_url: https://github.com/doorstop-dev/doorstop
 date_created: 2026-05-29
+updated: 2026-05-29
 last_updated: 2026-05-29
 ---
 
