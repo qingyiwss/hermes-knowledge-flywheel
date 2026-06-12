@@ -59,6 +59,12 @@
 - 🆕 [[task-startup-protocol]] — 任务启动协议：预算→确认→执行→签名强制闭环
 - 🆕 [[harbor-llm-stack]] — Harbor 一键LLM栈（零配置启动+NΞXUS多模型统一配置方案）
 
+## CC (Claude Code) — NΞXUS 代码工人
+
+- [[CC-CLAUDE-md]] — CC 职责说明书（只写代码，不碰知识库/配置/通信）
+- [[hermes-cc-sh]] — Hermes 派发 CC 的包装脚本
+- [[deepseek-anthropic-api]] — DeepSeek Anthropic 兼容 API 配置（6个 env vars）
+
 ## 工具/系统
 
 - [[hermes-config]] — Hermes Agent 配置记录

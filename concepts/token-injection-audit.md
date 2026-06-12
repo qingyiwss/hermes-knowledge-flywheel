@@ -92,4 +92,5 @@ hermes config set dashboard.show_token_analytics true
 
 | 轮次 | 日期 | 操作 |
 |------|------|------|
-| 初始 | 2026-05-31 | 量化每轮 context 注入，识别 tool schemas 为 85% 浪费源 |
+|| 初始 | 2026-05-31 | 量化每轮 context 注入，识别 tool schemas 为 85% 浪费源 |
+|| 实操反馈 | 2026-06-12 | threshold_pct=10→3 已落地，child_timeout 600→300 已落地，SOUL.md 已激活+personality 配置。重启网关后参数会回退默认值，需 cron 巡检防御退化 |
