@@ -29,6 +29,10 @@
 - [2026-05-31] 不要对 gateway 做破坏性操作（kill/restart）而不先确认 — 用户看不到你在干什么
 - [2026-05-31] 微信消息限流根因是频率不是长度 — 1643 chars 单条过，785 chars 在密集 tool call 后被限流
 
+### ✅ 应该做的
+- [2026-06-12] 重启网关后必须重新检查优化参数是否丢失（`threshold_pct` 回到 10%、`child_timeout` 回到 600）
+- [2026-06-12] SOUL.md 写入后必须 `hermes config set personality SOUL.md` 才能生效
+
 ## 架构决策
 
 ### 复合优于单一

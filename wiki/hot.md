@@ -1,14 +1,14 @@
 # Hot Cache — 最新上下文
-> 更新: 2026-05-31 · Wiki: 35篇 · P1: Token优化完成(20x) | P2: 飞轮skill已升级
+> 更新: 2026-06-12 · Wiki: 54篇 · P1: Token优化已修复(双引擎) | SOUL.md已激活
 
-## 最近飞轮
-- 🆕 Token优化复盘：4.8M→24万(20x)，4项改造落地
-- 🆕 第3轮完成：langgraph + claude-bug-bounty + harbor 三连拆
-- 🆕 第2轮完成：autogen + qodo-cover + crewAI 三连拆
-- 🆕 第1轮完成：agent-governance-toolkit + code-review-graph + aci 三连拆
+## 最近事件
+- 🛠️ 网关重启后优化参数丢失（threshold_pct→10, child_timeout→600），已全部恢复
+- 🆕 SOUL.md 写入并激活，personality 生效
+- 📝 growth-log + lessons-learned 追加，飞轮库保持同步
+- 🧠 用户要求：token 优化 + 执行效率 → 已完成配置修复
 
 ## 生效中的优化（下次飞轮即生效）
-- 预筛选：Hermes评分 → 只拆Top 1-2篇
-- 子Agent限流：README≤400行 + 源文件≤2个
-- 索引集中更新：子Agent不碰索引
-- 失败不重试：简版替代
+- threshold_pct: 3（10→3，省~2,300 tokens/轮）
+- child_timeout: 300（600→300，省~50% 子Agent空转）
+- max_iterations: 15（20→15，限制子Agent循环层次）
+- personality: SOUL.md（效率导向 persona，省~150 tokens/轮）

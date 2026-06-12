@@ -88,3 +88,10 @@
 - 代理协作的关键不是分工，是"禁止猜测"。当 Hermes 不完全理解需求时，分发给 CC 的任务必然跑偏
 - 知识库需要定期巡检，指标：①frontmatter 完整度 ②死链 ③孤立页面
 - 用户说的"飞轮"本质是：扫描→修复→反思→再扫描的闭环
+
+## [2026-06-12] Token 优化恢复 + SOUL.md 激活 — 云端迁移后优化参数丢失的教训
+
+- **来源：** 用户需求驱动（优化 token 消耗和执行效率）
+- **学到了什么：** 网关重启后，config.yaml 中的某些优化参数会回退到默认值（threshold_pct: 10, child_timeout: 600），必须手动重新设置。三个参数修复即可恢复 ~4,100 tokens/轮的节省。SOUL.md 需要 `hermes config set personality SOUL.md` 才能生效，仅放在 ~/.hermes/ 并不会自动加载。
+- **能力提升：** 3 个配置修复（threshold_pct 3%, child_timeout 300, max_iterations 15）+ personality 激活，恢复约 48% 的提示词压缩效果。lessons-learned.md 新增"重启后检查配置"记录。
+- **下一步：** 考虑用 cron 定期巡检优化参数是否偏离预期值，作为自动退化防御。
