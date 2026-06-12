@@ -96,6 +96,13 @@
 - **能力提升：** 3 个配置修复（threshold_pct 3%, child_timeout 300, max_iterations 15）+ personality 激活，恢复约 48% 的提示词压缩效果。lessons-learned.md 新增"重启后检查配置"记录。
 - **下一步：** 考虑用 cron 定期巡检优化参数是否偏离预期值，作为自动退化防御。
 
+## [2026-06-12] CC (Claude Code) 安装 + DeepSeek API 配置 — NΞXUS 双引擎正式合体
+
+- **来源：** 用户需求（恢复知识库后要求安装CC并配上DeepSeek API）
+- **学到了什么：** DeepSeek 提供 Anthropic 兼容 API（`https://api.deepseek.com/anthropic`），Claude Code 可以原生接入，无需代理。关键环境变量 6 个：`ANTHROPIC_BASE_URL`, `ANTHROPIC_AUTH_TOKEN`, `ANTHROPIC_MODEL`, `ANTHROPIC_DEFAULT_OPUS/SONNET/HAIKU_MODEL`, `CLAUDE_CODE_SUBAGENT_MODEL`, `CLAUDE_CODE_EFFORT_LEVEL`。包装脚本 `hermes-cc.sh` 封装了所有配置，Hermes 直接用 bash hermes-cc.sh -d <dir> "任务" 派发。
+- **能力提升：** NΞXUS 双引擎正式上线——Hermes（指挥官）+ CC（代码工人），职责清晰分工。CC 有专属 CLAUDE.md 明确权限边界。
+- **下一步：** 第一个实际代码任务派发给 CC，验证双引擎协作流程。
+
 ## 紧急规则（2026-06-12）
 
 **触发词「魏松山」= 上下文丢失信号**
