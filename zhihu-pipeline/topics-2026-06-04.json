@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-04",
+  "generated_at": "2026-06-04T17:54:48.366272",
+  "baidu_hot_count": 15,
+  "topics": [
+    {
+      "title": "上班族必备瑜伽垫清单",
+      "category": "运动户外",
+      "commission_pct": "8%",
+      "type": "evergreen",
+      "product": "瑜伽垫"
+    },
+    {
+      "title": "避坑指南：这些雨伞千万别买",
+      "category": "日用百货",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "雨伞"
+    },
+    {
+      "title": "母婴用品红黑榜：这些奶瓶真的好用",
+      "category": "母婴用品",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "奶瓶"
+    },
+    {
+      "title": "学生党显示器推荐，性价比炸裂",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "显示器"
+    },
+    {
+      "title": "用了机械键盘半年，说几句大实话",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "机械键盘"
+    },
+    {
+      "title": "关于「  水润家园好光景 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  辽宁省长：严肃查处相关单位和责任人 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  中国消费者抛弃耐克比想象中更快 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  端午火车票明日开售 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  百万黄金被盗 半瓶可乐成破案关键 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    }
+  ]
+}

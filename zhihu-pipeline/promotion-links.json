@@ -1,0 +1,10 @@
+{
+  "date": "2026-06-04",
+  "products": {
+    "蕉下果趣系列": {"url": "https://m.tb.cn/h.RS4BsUQ", "commission": "3.03%", "price": "~¥200"},
+    "网易严选超轻遮阳伞": {"url": "https://m.tb.cn/h.RSfZEXV", "commission": "~1.5%", "price": "~¥80"},
+    "天堂十骨加固款": {"url": "https://m.tb.cn/h.R7amHKk", "commission": "1.35%", "price": "¥49.9"},
+    "天堂基础三折": {"url": "https://m.tb.cn/h.RSfYBfO", "commission": "0.60%", "price": "~¥40"}
+  },
+  "note": "通过alimama CDP自动获取的推广链接，淘口令形式"
+}

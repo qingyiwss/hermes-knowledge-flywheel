@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-08",
+  "generated_at": "2026-06-08T08:30:20.070387",
+  "baidu_hot_count": 15,
+  "topics": [
+    {
+      "title": "学生党蓝牙耳机推荐，性价比炸裂",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "蓝牙耳机"
+    },
+    {
+      "title": "母婴用品红黑榜：这些安全座椅真的好用",
+      "category": "母婴用品",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "安全座椅"
+    },
+    {
+      "title": "避坑指南：这些垃圾桶千万别买",
+      "category": "日用百货",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "垃圾桶"
+    },
+    {
+      "title": "面膜评测：哪款最值得入手？",
+      "category": "美妆个护",
+      "commission_pct": "15%",
+      "type": "evergreen",
+      "product": "面膜"
+    },
+    {
+      "title": "收纳盒怎么选？看完这篇就够了",
+      "category": "家居家装",
+      "commission_pct": "8%",
+      "type": "evergreen",
+      "product": "收纳盒"
+    },
+    {
+      "title": "关于「  习近平同金正恩交往的精彩瞬间 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  上海部分考生的高考已提前结束 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  江苏一考生8点59才发现走错考场 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  高考首日这些瞬间让人印象深刻 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  菲律宾群岛地区发生7.9级地震 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    }
+  ]
+}

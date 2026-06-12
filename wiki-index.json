@@ -132,7 +132,7 @@
     "size": 4623
   },
   "a2a-agent-protocol": {
-    "file": "concepts\\a2a-agent-protocol.md",
+    "file": "concepts/a2a-agent-protocol.md",
     "title": "a2a-agent-protocol",
     "tags": [
       "skill-learning",
@@ -144,7 +144,7 @@
     "size": 2904
   },
   "affine-crdt-collaboration": {
-    "file": "concepts\\affine-crdt-collaboration.md",
+    "file": "concepts/affine-crdt-collaboration.md",
     "title": "AFFiNE 知识协作架构拆解",
     "tags": [
       "skill-learning",
@@ -156,7 +156,7 @@
     "size": 2741
   },
   "agent-reach-internet": {
-    "file": "concepts\\agent-reach-internet.md",
+    "file": "concepts/agent-reach-internet.md",
     "title": "Agent Reach — 给 AI Agent 装上互联网之眼",
     "tags": [
       "skill-learning",
@@ -168,7 +168,7 @@
     "size": 3766
   },
   "ai-commander-system": {
-    "file": "concepts\\ai-commander-system.md",
+    "file": "concepts/ai-commander-system.md",
     "title": "AI 指挥官系统架构",
     "tags": [
       "hermes",
@@ -180,7 +180,7 @@
     "size": 1754
   },
   "aider-ai-pair-programming": {
-    "file": "concepts\\aider-ai-pair-programming.md",
+    "file": "concepts/aider-ai-pair-programming.md",
     "title": "aider-ai-pair-programming",
     "tags": [
       "skill-learning",
@@ -192,7 +192,7 @@
     "size": 2727
   },
   "claude-obsidian-architecture": {
-    "file": "concepts\\claude-obsidian-architecture.md",
+    "file": "concepts/claude-obsidian-architecture.md",
     "title": "claude-obsidian 知识管理架构拆解",
     "tags": [
       "skill-learning",
@@ -204,7 +204,7 @@
     "size": 3202
   },
   "codegraphcontext-mcp-tools": {
-    "file": "concepts\\codegraphcontext-mcp-tools.md",
+    "file": "concepts/codegraphcontext-mcp-tools.md",
     "title": "CodeGraphContext 代码图谱 MCP 工具拆解",
     "tags": [
       "skill-learning",
@@ -216,7 +216,7 @@
     "size": 3652
   },
   "doorstop-requirements-management": {
-    "file": "concepts\\doorstop-requirements-management.md",
+    "file": "concepts/doorstop-requirements-management.md",
     "title": "Doorstop — 基于 Git 的轻量需求管理",
     "tags": [
       "skill-learning",
@@ -229,7 +229,7 @@
     "size": 2557
   },
   "gitbutler-virtual-branches": {
-    "file": "concepts\\gitbutler-virtual-branches.md",
+    "file": "concepts/gitbutler-virtual-branches.md",
     "title": "GitButler 虚拟分支协作架构拆解",
     "tags": [
       "skill-learning",
@@ -241,7 +241,7 @@
     "size": 4193
   },
   "gptcache-semantic-cache": {
-    "file": "concepts\\gptcache-semantic-cache.md",
+    "file": "concepts/gptcache-semantic-cache.md",
     "title": "GPTCache LLM 语义缓存拆解",
     "tags": [
       "skill-learning",
@@ -253,7 +253,7 @@
     "size": 2088
   },
   "harness-engineering": {
-    "file": "concepts\\harness-engineering.md",
+    "file": "concepts/harness-engineering.md",
     "title": "Harness 工程 — Agent 产品的正确构建范式",
     "tags": [
       "skill-learning",
@@ -265,7 +265,7 @@
     "size": 3587
   },
   "litellm-ai-gateway": {
-    "file": "concepts\\litellm-ai-gateway.md",
+    "file": "concepts/litellm-ai-gateway.md",
     "title": "LiteLLM AI 网关成本优化拆解",
     "tags": [
       "skill-learning",
@@ -277,7 +277,7 @@
     "size": 2412
   },
   "llmlingua-prompt-compression": {
-    "file": "concepts\\llmlingua-prompt-compression.md",
+    "file": "concepts/llmlingua-prompt-compression.md",
     "title": "LLMLingua Prompt 压缩技术拆解",
     "tags": [
       "skill-learning",
@@ -289,7 +289,7 @@
     "size": 2311
   },
   "metagpt-multi-agent-collaboration": {
-    "file": "concepts\\metagpt-multi-agent-collaboration.md",
+    "file": "concepts/metagpt-multi-agent-collaboration.md",
     "title": "MetaGPT 多Agent协作框架拆解",
     "tags": [
       "skill-learning",
@@ -301,7 +301,7 @@
     "size": 3091
   },
   "metagpt-multi-agent-requirements": {
-    "file": "concepts\\metagpt-multi-agent-requirements.md",
+    "file": "concepts/metagpt-multi-agent-requirements.md",
     "title": "MetaGPT — 多 Agent 需求→软件全流程",
     "tags": [
       "skill-learning",
@@ -314,7 +314,7 @@
     "size": 2730
   },
   "model-router": {
-    "file": "concepts\\model-router.md",
+    "file": "concepts/model-router.md",
     "title": "智能模型路由 — 根据复杂度自动选模型",
     "tags": [
       "skill-learning",
@@ -326,7 +326,7 @@
     "size": 3153
   },
   "plane-task-orchestration": {
-    "file": "concepts\\plane-task-orchestration.md",
+    "file": "concepts/plane-task-orchestration.md",
     "title": "Plane 任务编排与分配架构拆解",
     "tags": [
       "skill-learning",
@@ -338,7 +338,7 @@
     "size": 3730
   },
   "qodo-merge-ai-code-review": {
-    "file": "concepts\\qodo-merge-ai-code-review.md",
+    "file": "concepts/qodo-merge-ai-code-review.md",
     "title": "Qodo Merge AI代码审查架构拆解",
     "tags": [
       "skill-learning",
@@ -350,7 +350,7 @@
     "size": 3607
   },
   "quantaxis-backtest-engine": {
-    "file": "concepts\\quantaxis-backtest-engine.md",
+    "file": "concepts/quantaxis-backtest-engine.md",
     "title": "QUANTAXIS 事件驱动回测引擎剖析",
     "tags": [
       "skill-learning",
@@ -362,7 +362,7 @@
     "size": 3124
   },
   "robotframework-atdd-validation": {
-    "file": "concepts\\robotframework-atdd-validation.md",
+    "file": "concepts/robotframework-atdd-validation.md",
     "title": "Robot Framework — 验收测试驱动的需求验证",
     "tags": [
       "skill-learning",
@@ -375,21 +375,8 @@
     "summary": "**痛点：** 需求文档写完就过时，测试用例和需求描述是两套语言。需求说\"用户可登录\"，测试写 `test_login_returns_200()`——两者之间没有机器可读的追溯。",
     "size": 2810
   },
-  "token-smart-pipeline": {
-    "file": "concepts\\token-smart-pipeline.md",
-    "title": "Token Smart Pipeline — 三层优化引擎落地",
-    "tags": [
-      "skill-learning",
-      "automation",
-      "agent-upgrade",
-      "token-optimization",
-      "自研"
-    ],
-    "summary": "",
-    "size": 3008
-  },
   "tradingagents-multi-agent-architecture": {
-    "file": "concepts\\tradingagents-multi-agent-architecture.md",
+    "file": "concepts/tradingagents-multi-agent-architecture.md",
     "title": "TradingAgents 多智能体交易架构拆解",
     "tags": [
       "skill-learning",
@@ -400,5 +387,94 @@
     ],
     "summary": "",
     "size": 3189
+  },
+  "chrome-solution": {
+    "file": "concepts/chrome-solution.md",
+    "title": "Chrome 浏览器方案 — 真实 CDP 桥接 + headless 代理 + GitHub API",
+    "tags": [
+      "hermes",
+      "browser",
+      "proxy",
+      "anti-detect",
+      "automation",
+      "knowledge-base"
+    ],
+    "summary": "三方案：真Chrome CDP桥接（navigator.webdriver=false Google零CAPTCHA）、headless+--disable-ipv6（国内/GitHub）、GitHub API（代码搜索）。CordCloud IP被Google标记的根因分析+6个踩坑记录。",
+    "size": 4987
+  },
+  "browser-use-agent": {
+    "file": "concepts/browser-use-agent.md",
+    "title": "Browser Use — AI Agent 浏览器交互框架拆解",
+    "tags": [
+      "browser",
+      "ai-agent",
+      "web-automation",
+      "anti-detect",
+      "mcp"
+    ],
+    "summary": "96K⭐ Python 框架，让 LLM 像人一样操作网页。Playwright+Agent 规划循环+Cloud Stealth。与 chrome-bridge.py 对比：前者侧重任务自动化，后者侧重信息获取。",
+    "size": 2681
+  },
+  "activepieces-mcp-workflow": {
+    "file": "concepts/activepieces-mcp-workflow.md",
+    "title": "Activepieces — AI 工作流 + MCP 服务端平台拆解",
+    "tags": [
+      "ai-agent",
+      "mcp",
+      "workflow",
+      "automation",
+      "no-code"
+    ],
+    "summary": "22.5K⭐ 开源 Zapier 替代。280+ Pieces 自动转为 MCP Server，LLM 可调用。当前阶段对 NΞXUS 价值有限但远期可做 SaaS API 网关。",
+    "size": 2122
+  },
+  "mcp-use-framework": {
+    "file": "concepts/mcp-use-framework.md",
+    "title": "mcp-use — 全栈 MCP 框架拆解",
+    "tags": [
+      "mcp",
+      "ai-agent",
+      "tool-calling",
+      "agent-upgrade"
+    ],
+    "summary": "10K⭐ 全栈 MCP 框架。核心创新 MCP Apps — 带 UI Widget 的工具，ChatGPT/Claude 里直接渲染图表/表单/地图。对纯文本交互场景价值有限。",
+    "size": 2301
+  },
+  "nexus-dual-engine-v3": {
+    "file": "concepts/nexus-dual-engine-v3.md",
+    "title": "NΞXUS 双引擎 V3 — Hermes + Claude Code 完整架构",
+    "tags": [
+      "hermes",
+      "claude-code",
+      "reasonix",
+      "multi-agent",
+      "agent-architecture"
+    ],
+    "summary": "NΞXUS 双引擎最终版架构文档：Hermes（总指挥）+ CC（代码工人）角色分工、防作弊四阶段工作流、三重验证机制、微信通信层。",
+    "size": 12830
+  },
+  "web-search-toolkit": {
+    "file": "concepts/web-search-toolkit.md",
+    "title": "Web 搜索工具包 — 多平台采集方案",
+    "tags": [
+      "web-search",
+      "automation",
+      "agent-tools",
+      "knowledge-base"
+    ],
+    "summary": "B站/知乎/CSDN/Reddit/YouTube 等多平台搜索与内容提取方案。浏览器工具优先于 curl/API，解决登录墙和反爬。",
+    "size": 4124
+  },
+  "github-first-rule": {
+    "file": "concepts/github-first-rule.md",
+    "title": "GitHub First 原则 — Agent 自主解决问题的第一响应规则",
+    "tags": [
+      "claude-code",
+      "hermes",
+      "workflow",
+      "knowledge-base"
+    ],
+    "summary": "Agent 遇到问题时优先在 GitHub 搜索已有方案而非凭空创造。搜索→评估→借用→归因四步法。",
+    "size": 1415
   }
 }

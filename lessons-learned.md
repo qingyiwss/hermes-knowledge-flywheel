@@ -25,6 +25,9 @@
 - [2026-05-29] 不要跳过审核直接汇报 — commander 模式的三关审核必须走
 - [2026-05-29] 不要反复重试 git push — 两次失败立刻换方案（API 或 GIT_ASKPASS）
 - [2026-05-29] 不要在 execute_code 中用 token 做 GitHub API 调用 — token 被截断，返回 401
+- [2026-05-31] memory 删除前必须先确认 old_text 确实存在于该条目中 — 批量盲删连错 7 次浪费 30K tokens
+- [2026-05-31] 不要对 gateway 做破坏性操作（kill/restart）而不先确认 — 用户看不到你在干什么
+- [2026-05-31] 微信消息限流根因是频率不是长度 — 1643 chars 单条过，785 chars 在密集 tool call 后被限流
 
 ## 架构决策
 
@@ -35,6 +38,13 @@
 ### 技能组合 > 技能堆叠
 - project-commander 作为框架，claude-code/reasonix/obsidian/llm-wiki 作为插件
 - 不要在一个技能里塞所有逻辑
+
+### 微信通信铁律（2026-05-31 实战教训）
+- 分片间隔 10s / 重试 1 次 / 重试间隔 10s（源码实际 ×3 = 30s）
+- 配置位置：`platforms.weixin.extra.send_chunk_delay_seconds` / `send_chunk_retries` / `send_chunk_retry_delay_seconds`
+- Hermes v0.15.1 无熔断器（GitHub #26828 P1 open），限流窗口分钟级，密集重试必触发 OOM
+- 自限单条 ≤500 chars，长任务结果聚合一条汇报不逐条推送
+- 每次回复结尾必带 `🤖 模型 | token消耗`
 
 ## 待验证的假设
 - [ ] cron 定期做 wiki lint 能否自动发现知识盲区？

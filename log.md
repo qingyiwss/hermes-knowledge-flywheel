@@ -3,6 +3,40 @@
 > 所有 wiki 操作按时间记录。仅追加。
 > 格式：`## [YYYY-MM-DD] 操作 | 主题`
 
+## [2026-06-02] create | Chrome 浏览器方案 — 三方案 + 踩坑记录
+- 新增 [[chrome-solution]] — 真实 Chrome CDP 桥接（navigator.webdriver=false）+ headless + --disable-ipv6 + GitHub API
+- 落地：chrome-bridge.py 脚本 + .env 配置更新 + wiki-index.json 注册
+- 6 个踩坑：IPv6泄露、Tor出口IP、zombie agent-browser、CloakBrowser Catalina不兼容、undetected-chromedriver间歇性、headless锁真Chrome
+- 测试 12 种免费方案，最终选定 github API + chrome-bridge 双轨
+
+## [2026-06-02] 飞轮×3 | browser-use + activepieces + mcp-use 三连拆解
+- 扫描 GitHub Trending（AI Agent / 浏览器自动化 / MCP 方向）
+- [[browser-use-agent]] — 96K⭐ AI Agent 浏览器自动化，Playwright 封装 + Cloud Stealth
+- [[activepieces-mcp-workflow]] — 22.5K⭐ 开源 Zapier，280+ Pieces 自动转 MCP Server
+- [[mcp-use-framework]] — 10K⭐ 全栈 MCP，核心创新 MCP Apps（带 UI Widget 的工具）
+- 审计修复：22 个反斜杠路径 + 新增 3 个孤儿文件到索引
+- 索引：33 → 38 条目，概念文件：50 → 50（净增 0，新增 3 篇抵消了索引补录的 2 篇 + 1 篇新概念）
+
+## [2026-05-31] 飞轮1/5 | Context注入审计 + P0优化落地
+- 新增 [[token-injection-audit]] — 量化每轮 10,245 tokens 固定注入，Tool Schemas 占 85%
+- 落地：禁用 5 个闲置 toolset (spotify/homeassistant/video/image_gen/video_gen)
+- 落地：tool_search.threshold_pct 10→5，show_cost=true，token_analytics=true
+
+## [2026-05-31] 飞轮2/5 | CC上下文瘦身
+- 新增 [[cc-context-slim]] — CLAUDE.md 97行→26行，gstack技能表压缩+懒加载
+- 落地：CLAUDE.md v2.5 精简到 26 行 1,381 chars，CC 验证 38 个 gstack 技能全识别
+
+## [2026-05-31] 飞轮3/5 | 系统提示词+工具描述优化
+- 新增 [[system-prompt-slim]] — SOUL.md 效率 persona + threshold 5→3% + child_timeout 600→300
+- 落地：SOUL.md 写入中文效率导向 persona，工具搜索阈值降至 3%
+
+## [2026-05-31] 飞轮4/5 | Memory 压缩
+- 新增 [[memory-compression]] — 代理条目 3→1，删除过期订阅链接，节省 84%
+
+## [2026-05-31] 飞轮5/5 | Token 实时监控+自适应降级
+- 新增 [[token-monitoring-system]] — token-monitor.py + 每日 22:00 cron 报告 + fallback_providers 配置
+- 落地：监控脚本从 state.db 读数据，cron job 自动推送日报
+
 ## [2026-05-31] create | LangGraph 有状态Agent编排框架拆解
 
 - 拆解 langchain-ai/langgraph（⭐33,415）
@@ -141,3 +175,14 @@
 **原因**：之前的硬分工只看"产出是代码还是非代码"，但关键问题是 Hermes 没理解清楚需求就分发任务，导致 CC 乱做。
 
 **效果**：现在有明确的 4 阶段流程，阶段 0 强制 Hermes 确认 5 问后才能进入下一阶段。
+---
+## [2026-06-04] 飞轮 4 轮 — 内容去AI味
+
+**扫描**：GitHub trending → lynote-ai/humanize-text (⭐1069)
+**拆解**：四种方法论（翻译链/LLM改写/检测闭环/混合引擎）
+**沉淀**：
+- 新增 [[ai-text-humanization]] — AI文本人味化知识
+- 更新 zhihu-content 技能：去推广声明、去AI味写作原则、模板句替换表
+- 保存淘宝联盟凭证到 .taobao-credentials
+**学到**：去AI味不是让模型更聪明，是打破统计指纹——句长参差、temperature 1.2、AI高频词替换
+

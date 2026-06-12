@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-10",
+  "generated_at": "2026-06-10T09:15:57.329690",
+  "baidu_hot_count": 15,
+  "topics": [
+    {
+      "title": "避坑指南：这些保温杯千万别买",
+      "category": "日用百货",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "保温杯"
+    },
+    {
+      "title": "口红评测：哪款最值得入手？",
+      "category": "美妆个护",
+      "commission_pct": "15%",
+      "type": "evergreen",
+      "product": "口红"
+    },
+    {
+      "title": "上班族必备筋膜枪清单",
+      "category": "运动户外",
+      "commission_pct": "8%",
+      "type": "evergreen",
+      "product": "筋膜枪"
+    },
+    {
+      "title": "用了显示器半年，说几句大实话",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "显示器"
+    },
+    {
+      "title": "母婴用品红黑榜：这些奶瓶真的好用",
+      "category": "母婴用品",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "奶瓶"
+    },
+    {
+      "title": "关于「  习近平结束对朝鲜国事访问回到北京 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  美军称对伊朗发动“自卫性”打击 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  中国首颗时间胶囊落地四川 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  花篮见证这一刻 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  “鹅腿阿姨”在群内称原材料是鸭腿 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    }
+  ]
+}

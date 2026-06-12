@@ -2,7 +2,7 @@
 
 > 知识库目录。每个 wiki 页面一行：wikilink + 一句话摘要。
 > 新增页面记得加到对应分类。
-> 最后更新：2026-05-31 | 总页数：38
+|> 最后更新：2026-06-04 | 总页数：39
 ## 投资策略
 
 - [[valuation-dca-strategy]] — 估值择时定投策略总览（PE百分位法）
@@ -45,6 +45,15 @@
 - 🆕 [[langgraph-stateful-agents]] — LangGraph 有状态Agent编排（StateGraph+Checkpoint+Human-in-the-loop，三角对比+NΞXUS防作弊流水线）
 - 🆕 [[claude-bug-bounty-security]] — Claude Bug Bounty AI驱动渗透测试（20种漏洞+8Agent+NΞXUS CC安全审查集成）
 - 🆕 [[token-optimization-retro]] — Token优化复盘：飞轮从53万/篇→5万/篇的4项改造
+- 🆕 [[token-injection-audit]] — Context注入审计：每轮10K token的浪费结构 (85%在Tool Schemas)
+- 🆕 [[cc-context-slim]] — CC上下文瘦身：CLAUDE.md 97行→26行，gstack懒加载
+- [[system-prompt-slim]] — 系统提示词+工具描述优化：阈值5→3%，SOUL.md效率导向
+- 🆕 [[ai-text-humanization]] — AI文本人味化：四法去机器感（翻译链/LLM改写/检测闭环/混合引擎）
+- 🆕 [[memory-compression]] — Memory压缩：代理条目去重合并，删除过期订阅链接
+- 🆕 [[token-monitoring-system]] — Token实时监控+自适应降级：monitor脚本+cron日报+fallback
+- 🆕 [[network-diagnostics]] — 网络抓取瓶颈诊断：DNS/TCP/HTTP全链路都通，问题在解析代码
+- 🆕 [[web-search-toolkit]] — Web搜索能力升级：4引擎搜索器+引擎专用解析器固化
+- 🆕 [[direct-data-sources]] — 游戏数据直连源：绕过搜索引擎直接拿价格+论坛+私服数据
 - 🆕 [[network-fix]] — 终端网络修复：代理环境变量+GitHub CDN直连规则
 - 🆕 [[github-first-rule]] — GitHub First规则：遇难先搜(一周内优先)，不重复造轮子
 - 🆕 [[task-startup-protocol]] — 任务启动协议：预算→确认→执行→签名强制闭环

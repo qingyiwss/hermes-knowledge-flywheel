@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-06",
+  "generated_at": "2026-06-06T09:12:11.819715",
+  "baidu_hot_count": 15,
+  "topics": [
+    {
+      "title": "收纳盒怎么选？看完这篇就够了",
+      "category": "家居家装",
+      "commission_pct": "8%",
+      "type": "evergreen",
+      "product": "收纳盒"
+    },
+    {
+      "title": "避坑指南：这些保温杯千万别买",
+      "category": "日用百货",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "保温杯"
+    },
+    {
+      "title": "防晒霜评测：哪款最值得入手？",
+      "category": "美妆个护",
+      "commission_pct": "15%",
+      "type": "evergreen",
+      "product": "防晒霜"
+    },
+    {
+      "title": "2026年充电宝推荐清单（预算1000以内）",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "充电宝"
+    },
+    {
+      "title": "用了显示器半年，说几句大实话",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "显示器"
+    },
+    {
+      "title": "关于「  习近平同通伦举行会谈 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  官方拟规定：这9种情形可提取公积金 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  普京：泽连斯基公开信粗鲁无礼 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  公安机关、教育部门提醒考生诚信赴考 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  多家酒店问题被曝光 牙科蓝膜卖爆 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    }
+  ]
+}

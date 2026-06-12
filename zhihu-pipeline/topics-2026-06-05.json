@@ -1,0 +1,72 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T09:29:51.168823",
+  "baidu_hot_count": 15,
+  "topics": [
+    {
+      "title": "面膜评测：哪款最值得入手？",
+      "category": "美妆个护",
+      "commission_pct": "15%",
+      "type": "evergreen",
+      "product": "面膜"
+    },
+    {
+      "title": "上班族必备跑鞋清单",
+      "category": "运动户外",
+      "commission_pct": "8%",
+      "type": "evergreen",
+      "product": "跑鞋"
+    },
+    {
+      "title": "学生党路由器推荐，性价比炸裂",
+      "category": "数码家电",
+      "commission_pct": "5%",
+      "type": "evergreen",
+      "product": "路由器"
+    },
+    {
+      "title": "避坑指南：这些毛巾千万别买",
+      "category": "日用百货",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "毛巾"
+    },
+    {
+      "title": "母婴用品红黑榜：这些辅食机真的好用",
+      "category": "母婴用品",
+      "commission_pct": "10%",
+      "type": "evergreen",
+      "product": "辅食机"
+    },
+    {
+      "title": "关于「  追求实实在在、没有水分的增长 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  燃油车价格大幅跳水 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  日本扬言以综合国力应对中国军力 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  多地开通考生办证“绿色通道” 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    },
+    {
+      "title": "关于「  泽连斯基公开致信普京 」，普通人怎么看？",
+      "category": "热点",
+      "commission_pct": "N/A",
+      "type": "hotspot"
+    }
+  ]
+}

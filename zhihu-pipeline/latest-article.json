@@ -1,0 +1,18 @@
+{
+  "type": "review",
+  "title": "面膜评测：哪款最值得入手？",
+  "category": "美妆个护",
+  "template": "# {title}\n\n> 本文为真实体验分享，文末有购买链接，通过链接下单作者可获得小额佣金（不影响你的价格）。\n\n## 先说结论\n\n{conclusion}\n\n## 我为什么买了它\n\n{buy_reason}\n\n## 使用体验（{days}天真实感受）\n\n### 优点\n{pros}\n\n### 缺点\n{cons}\n\n## 和竞品对比\n\n{comparison}\n\n## 适合谁买？\n\n{target_user}\n\n## 总结\n\n{final_verdict}\n\n---\n\n{affiliate_links}\n\n*以上链接均来自淘宝联盟，价格与官网一致。*\n",
+  "placeholders": {
+    "title": "面膜评测：哪款最值得入手？",
+    "conclusion": "[需填写：一句话结论]",
+    "buy_reason": "[需填写：购买原因]",
+    "days": "30",
+    "pros": "[需填写：优点列表]",
+    "cons": "[需填写：缺点]",
+    "comparison": "[需填写：竞品对比]",
+    "target_user": "[需填写：目标用户]",
+    "final_verdict": "[需填写：最终建议]",
+    "affiliate_links": "[需填写：淘宝客链接]"
+  }
+}
