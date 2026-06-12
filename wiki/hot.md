@@ -8,10 +8,10 @@
 - 📝 growth-log + lessons-learned 追加，飞轮库保持同步
 
 ## 生效中的优化
-- threshold_pct: 3（省~2,300 tokens/轮）
-- child_timeout: 300（省~50% 子Agent空转）
+- threshold_pct: 3
+- child_timeout: 300
 - max_iterations: 15
-- personality: SOUL.md（效率导向 persona + 底层规则）
+- personality: SOUL.md（含「魏松山」方案确认制 + 恢复机制）
 
 ## 底层规则
 - 结论开头: "魏松山大人" + 方案总结 + 预估 token/费用
