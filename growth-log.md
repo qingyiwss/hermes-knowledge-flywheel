@@ -103,6 +103,18 @@
 - **能力提升：** NΞXUS 双引擎正式上线——Hermes（指挥官）+ CC（代码工人），职责清晰分工。CC 有专属 CLAUDE.md 明确权限边界。
 - **下一步：** 第一个实际代码任务派发给 CC，验证双引擎协作流程。
 
+## [2026-06-12] 搜索优化 — DDGS 后端配置 + Hermes v0.16 文档学习
+
+- **来源：** 用户需求（优化网络环境和搜索能力）+ Hermes v0.16 升级后学习官方文档
+- **学到了什么：**
+  - Hermes web 搜索支持 7 个后端，可通过 `web.search_backend` 配置，**DDGS (DuckDuckGo)** 是唯一无需任何 API Key 的免费后端，`pip install ddgs` 即可用
+  - Hermes 支持 **per-capability 配置**：`web.search_backend` 和 `web.extract_backend` 可独立设置，搜索用免费的 DDGS、提取用 Firecrawl 等
+  - 这台 LAX 服务器 **Google 直连 245ms**，没有网络限制，之前的 Tor/Clash 代理完全不需要
+  - Hermes v0.16 的新功能：Tool Gateway、firecrawl 集成、ddgs 支持、per-capability 搜索配置
+  - 更新了 skills 数据：hermes-agent 技能记录的最新 CLI 命令（cron 子命令更新、sessions 命令更新等）
+- **能力提升：** 搜索从"默认后端 + Bing curl 补丁"升级为"DDGS 免费高质量搜索"，中英文搜索结果质量显著提升。Hermes 知识库技能内容保持与 v0.16 文档同步。
+- **下一步：** 评估是否需要配置 `web.extract_backend` 提升 URL 内容提取质量
+
 ## 紧急规则（2026-06-12）
 
 **触发词「魏松山」= 上下文丢失信号**

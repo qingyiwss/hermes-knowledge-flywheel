@@ -36,6 +36,8 @@
 - [2026-06-12] 每次多步骤任务结尾必须有 ## ✅ 小结 + Token 消耗行
 - [2026-06-12] 方案开头写"魏松山大人" + 方案总结 + 预估 token/费用，用 clarify 确认框等确认后执行
 - [2026-06-12] 当输入"魏松山"时 — 说明丢了规则，读飞轮知识库修正自己并继续
+- [2026-06-12] 搜索后端 DDGS (DuckDuckGo) 配置于 `web.search_backend: ddgs`，无需 API Key，`pip install ddgs` 即可
+- [2026-06-12] Hermes web 搜索支持 per-capability 配置：`web.search_backend` 和 `web.extract_backend` 可独立设置不同的后端
 - [2026-06-12] 搜索后端配置：`web.search_backend = google`。这台服务器（LAX）Google 直连 245ms，比 DDGS/Bing 更快，中文搜索质量好。`search_backend` 是单值配置，不支持优先级列表。
 - [2026-06-12] 多步骤任务必须有 ## ✅ 小结 + Token 消耗行
 - [2026-06-12] 结论开头写"魏松山大人" + 方案总结 + 预估消耗
