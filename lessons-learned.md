@@ -41,6 +41,7 @@
 - [2026-06-12] web_extract 辅助模型可节省摘要费用：`auxiliary.web_extract.model = deepseek-v4-flash`
 - [2026-06-12] checkpoints 开启后可用 `/rollback` 回滚文件快照
 - [2026-06-12] compression.protect_last_n 控制压缩保留的倒数消息数，15 比 20 更激进
+- [2026-06-12] 辅助模型切换方案：compression/title_generation/curator/approval 切到 deepseek-v4-flash，省 ~85% 辅助任务费用。这些任务不需要深度推理，flash 模型性价比最高
 - [2026-06-12] 模型切换三方案：fallback_providers（自动降级）、claude -m（手动切换）、/model（会话级切换）。Auxiliary slot 可独立配 cheap model 省费用
 - [2026-06-12] 搜索后端配置：`web.search_backend = google`。这台服务器（LAX）Google 直连 245ms，比 DDGS/Bing 更快，中文搜索质量好。`search_backend` 是单值配置，不支持优先级列表。
 - [2026-06-12] 多步骤任务必须有 ## ✅ 小结 + Token 消耗行
