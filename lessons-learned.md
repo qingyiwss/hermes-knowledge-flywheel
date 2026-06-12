@@ -38,6 +38,9 @@
 - [2026-06-12] 当输入"魏松山"时 — 说明丢了规则，读飞轮知识库修正自己并继续
 - [2026-06-12] 搜索后端 DDGS (DuckDuckGo) 配置于 `web.search_backend: ddgs`，无需 API Key，`pip install ddgs` 即可
 - [2026-06-12] Hermes web 搜索支持 per-capability 配置：`web.search_backend` 和 `web.extract_backend` 可独立设置不同的后端
+- [2026-06-12] web_extract 辅助模型可节省摘要费用：`auxiliary.web_extract.model = deepseek-v4-flash`
+- [2026-06-12] checkpoints 开启后可用 `/rollback` 回滚文件快照
+- [2026-06-12] compression.protect_last_n 控制压缩保留的倒数消息数，15 比 20 更激进
 - [2026-06-12] 搜索后端配置：`web.search_backend = google`。这台服务器（LAX）Google 直连 245ms，比 DDGS/Bing 更快，中文搜索质量好。`search_backend` 是单值配置，不支持优先级列表。
 - [2026-06-12] 多步骤任务必须有 ## ✅ 小结 + Token 消耗行
 - [2026-06-12] 结论开头写"魏松山大人" + 方案总结 + 预估消耗

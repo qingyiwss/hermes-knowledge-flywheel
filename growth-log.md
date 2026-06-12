@@ -115,6 +115,17 @@
 - **能力提升：** 搜索从"默认后端 + Bing curl 补丁"升级为"DDGS 免费高质量搜索"，中英文搜索结果质量显著提升。Hermes 知识库技能内容保持与 v0.16 文档同步。
 - **下一步：** 评估是否需要配置 `web.extract_backend` 提升 URL 内容提取质量
 
+## [2026-06-12] 全面自我优化 — 根据 Hermes v0.16 文档系统优化全部配置
+
+- **来源：** 用户命令"根据文档全面优化自己"
+- **学到了什么：**
+  - web_extract 可以指定辅助模型（`auxiliary.web_extract.model`），用便宜的 v4-flash 做页面摘要，省 ~70% 摘要费用
+  - checkpoints 功能（`/rollback`）可以防止误改文件，开启后快照占用很小
+  - compression 的 `protect_last_n` 控制压缩时保留最后几条消息，默认 20 可降到 15
+  - Hermes 文档更新频繁，v0.16 新增：DDGS 搜索后端、per-capability 配置、firecrawl 集成、Tool Gateway、catalog MCP 安装、AGENTS.md 递归发现
+- **能力提升：** 7 项优化全部落地：web_extract 省费用、压缩更激进、checkpoints 防误改、搜索配置最优。hermes-agent skill 数据同步更新。knowledge-index 路由表新增 v0.16 特性条目。
+- **下一步：** 每次 `hermes update` 后自动检查官方文档变更，保持配置和技能同步。
+
 ## 紧急规则（2026-06-12）
 
 **触发词「魏松山」= 上下文丢失信号**
