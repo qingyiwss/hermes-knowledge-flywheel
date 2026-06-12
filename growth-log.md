@@ -95,3 +95,9 @@
 - **学到了什么：** 网关重启后，config.yaml 中的某些优化参数会回退到默认值（threshold_pct: 10, child_timeout: 600），必须手动重新设置。三个参数修复即可恢复 ~4,100 tokens/轮的节省。SOUL.md 需要 `hermes config set personality SOUL.md` 才能生效，仅放在 ~/.hermes/ 并不会自动加载。
 - **能力提升：** 3 个配置修复（threshold_pct 3%, child_timeout 300, max_iterations 15）+ personality 激活，恢复约 48% 的提示词压缩效果。lessons-learned.md 新增"重启后检查配置"记录。
 - **下一步：** 考虑用 cron 定期巡检优化参数是否偏离预期值，作为自动退化防御。
+
+## 紧急规则（2026-06-12）
+
+**触发词「魏松山」= 上下文丢失信号**
+- 当收到消息只包含"魏松山"时 → 立即从 all_concepts 中重建上下文，继续当前任务
+- 每次飞轮完成后必须推送到 GitHub：`git add growth-log.md lessons-learned.md wiki/hot.md && git commit -m "docs: 飞轮#N 同步 — <摘要>" && git push`
