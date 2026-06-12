@@ -6,6 +6,7 @@
 - 🆕 SOUL.md 写入并激活，personality 生效
 - 📝 growth-log + lessons-learned 追加，飞轮库保持同步
 - 🧠 用户要求：token 优化 + 执行效率 → 已完成配置修复
+- 📌 **新规则：飞轮必须同时同步 Obsidian 知识库**（growth-log.md + lessons-learned.md + wiki/hot.md → git push）
 
 ## 生效中的优化（下次飞轮即生效）
 - threshold_pct: 3（10→3，省~2,300 tokens/轮）
