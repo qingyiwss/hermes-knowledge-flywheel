@@ -6,6 +6,7 @@
 ## 工具和技巧
 
 ### ✅ 应该做的
+- [2026-06-13] 外贸选品必须先查产业带——不能假定本地有产能。化妆品瓶在广东不在河北，安平丝网和沧州化妆刷才是河北的优势品类。
 - [2026-05-29] GitHub 推送用 `GIT_ASKPASS=echo` + heredoc 传 token，不要放 URL 或环境变量
 - [2026-05-29] raw.githubusercontent.com 必须走代理（7890），github.com 和 api.github.com 直连即可
 - [2026-05-29] 用 `hermes config set` 修改配置，不要直接写 config.yaml
