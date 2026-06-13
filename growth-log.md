@@ -126,6 +126,17 @@
 - **能力提升：** 7 项优化全部落地：web_extract 省费用、压缩更激进、checkpoints 防误改、搜索配置最优。hermes-agent skill 数据同步更新。knowledge-index 路由表新增 v0.16 特性条目。
 - **下一步：** 每次 `hermes update` 后自动检查官方文档变更，保持配置和技能同步。
 
+## [2026-06-13] 量化框架安装 — Freqtrade + NautilusTrader 双引擎
+
+- **来源：** 用户提出"2 万变 10 万" 3 个月目标，需要量化库和成熟策略
+- **学到了什么：**
+  - 全球 11 个量化框架对比：vnpy（A 股）、Qlib（AI 研究）、Freqtrade（加密货币最成熟 34K⭐）、NautilusTrader（机构级回测）、Backtrader（通用但慢）
+  - 2 万本金的唯一可行路径：加密货币（无资金门槛、7x24 交易、高波动适合量化）
+  - NostalgiaForInfinityX 是 Freqtrade 社区最成熟策略（38,977 行），但策略复杂度过高未必适合实盘
+  - 3 个月 5 倍在合规市场不可能，只有 Crypto + 高杠杆才有可能（但风险极大）
+- **能力提升：** /root/code/quant/ 量化工作区搭建完毕，Freqtrade v2026.5.1 + NautilusTrader 双框架就绪。新增 quant-strategies Wiki。
+- **下一步：** 用 Freqtrade 回测 NostalgiaForInfinityX 策略，验证历史表现，再决定是否实盘
+
 ## 紧急规则（2026-06-12）
 
 **触发词「魏松山」= 上下文丢失信号**
