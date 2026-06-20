@@ -253,3 +253,23 @@
   - status-reporting: 模型名改为 mimo-v2.5-pro
   - nexus-boot: 飞轮库数量改为 6
 - **缺失技能识别：** Freqtrade、Supabase、Vercel、MiMo 模型优化
+
+## [2026-06-20] CC Skills 补全 — Supabase + Next.js 指南
+
+- **来源：** 用户问"CC 有哪些 skills，缺失哪些"
+- **诊断发现：**
+  - 全局 CLAUDE.md 只有 104 行基础指南
+  - 缺 Supabase 全栈操作指南（Auth/Storage/Edge Functions/Migration）
+  - 缺 Next.js App Router 深度指南（Server Components/缓存/Middleware）
+  - claudecode/CLAUDE.md 严重过时（macOS 路径、旧知识库）
+- **修复内容：**
+  - 创建 `/root/code/CLAUDE-supabase.md`（Supabase 全栈操作，150+ 行）
+  - 创建 `/root/code/CLAUDE-nextjs.md`（Next.js App Router 深度指南，200+ 行）
+  - 更新 `~/.claude/CLAUDE.md`（120 行，引用技术栈指南）
+  - 清理 `/root/code/claudecode/CLAUDE.md`（从 26 行旧版更新为 v3.0）
+  - 同步 `/root/code/CLAUDE.md` 副本
+- **CC 当前 Skills 状态：**
+  - 全局指南：✅ 完整（角色+铁律+质量标准+陷阱+效率技巧）
+  - Supabase 指南：✅ 新增
+  - Next.js 指南：✅ 新增
+  - 项目级 CLAUDE.md：✅ transcribo/OpenMontage 正常
