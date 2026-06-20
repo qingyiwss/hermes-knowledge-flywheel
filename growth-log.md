@@ -171,3 +171,16 @@
 - **Wiki 增量：**
   - mimo-v25pro-optimization.md — MiMo 模型参数/价格/配置优化
   - cost-monitoring.md — 成本监控指标/阈值/报告脚本
+
+## [2026-06-20] 飞轮#3 — 工具链优化实战
+
+- **来源：** 用户要求多次飞轮迭代，第3轮聚焦工具链和执行效率
+- **学到了什么：**
+  - 并行工具调用减少轮次 → 减少上下膨胀 → 省 Token
+  - 工具选择优化：read_file > cat, search_files > grep, patch > sed
+  - CC 任务描述精度直接决定执行效率（精确描述省 2-3 轮重做）
+  - LCM 早压缩（20%）比晚压缩（60%）更有效
+  - no_agent Cron 是最省 Token 的监控方案（零消耗）
+  - web_search/browser 选择：信息搜索用 web_search，交互操作用 browser
+- **Wiki 增量：**
+  - toolchain-optimization.md — 工具链优化实战指南
