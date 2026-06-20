@@ -207,3 +207,18 @@
   - 调整策略：缓存<50% → 检查提示稳定性，Token>5000 → 压缩输出，成本>¥20 → 提高命中率
 - **Wiki 增量：**
   - verification-strategy.md — 实战验证框架+案例+调整策略
+
+## [2026-06-20] 飞轮库大修 — 结构统一 + BOOTSTRAP 现代化
+
+- **来源：** 用户要求对飞轮库进行优化，对能力不足的地方进行升级
+- **诊断发现：**
+  - hot.md 声称 63 篇，但 wiki/ 只有 9 个文件，其余 54 个在 concepts/（旧结构）
+  - BOOTSTRAP.md 仍是 Windows 路径（D:/、macOS），Linux 环境不兼容
+  - index.md 过时，引用不存在的文件
+  - concepts/ 和 wiki/ 双目录结构混乱
+- **修复内容：**
+  - concepts/ 54 篇全量迁入 wiki/ → wiki/ 总计 63 篇
+  - BOOTSTRAP.md v2.0 重写：Linux 路径 + MiMo 模型 + 当前 NΞXUS 规则
+  - index.md 重建：14 个分类，63 篇全部索引
+  - hot.md 修正：准确反映当前状态
+- **Wiki 增量：** 54 篇（从 concepts/ 迁入）

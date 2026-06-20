@@ -2,19 +2,21 @@
 > 更新: 2026-06-20 · Wiki: 63篇 · MiMo 模型时代
 
 ## 最近事件
-- 🔄 **模型切换** — DeepSeek V4 Pro → MiMo-V2.5-Pro（小米），全栈迁移（Hermes + CC + 子代理）
-- 📊 **飞轮#1-5** — Token消耗+缓存命中+执行效率+工具链+最佳实践+验证策略（七篇 Wiki）
-- 🌐 **独立站上线** — qingyiwss.github.io/saudi-trade-site（英阿双语，GEO 优化，55/57 Q&A FAQ）
+- 🔄 **模型切换** — DeepSeek V4 Pro → MiMo-V2.5-Pro（小米），全栈迁移
+- 📊 **飞轮#1-5** — Token消耗+缓存命中+执行效率+工具链+最佳实践+验证（8篇新 Wiki）
+- 🏗️ **飞轮库大修** — concepts/ 54篇全量迁入 wiki/，BOOTSTRAP 现代化，index.md 重建
+- 🌐 **独立站上线** — qingyiwss.github.io/saudi-trade-site（英阿双语，GEO 优化）
 - 🔧 **Loop Engineering** — hermes-cc-worktree.sh + hermes-cc-loop.sh 补齐
-- 📱 **外贸渠道调研** — WhatsApp 中东回复率 50%+，多渠道叠加 +287%
 
-## MiMo 模型配置
-- 主模型：mimo-v2.5-pro（xiaomi, token-plan-cn.xiaomimimo.com）
-- 子代理/辅助：mimo-v2-flash
-- 费用：输入 ¥3/百万（缓存命中 ¥0.025），输出 ¥6/百万
-- Claude Code 设置：~/.claude/settings.json 已同步
-- 智能体任务能力 #5/92，编程 #8/92
-- 简洁度 #4/92（输出比平均少 13%）
+## 模型配置
+| 角色 | 模型 | 提供商 |
+|------|------|--------|
+| Hermes 主模型 | mimo-v2.5-pro | xiaomi |
+| CC 主模型 | mimo-v2.5-pro | xiaomi (Anthropic 兼容) |
+| CC 子代理 | mimo-v2-flash | xiaomi |
+| 辅助模型 | mimo-v2-flash | xiaomi |
+
+**价格**：Pro 输入 ¥3/百万（缓存 ¥0.025），Flash 输入 ¥0.8/百万（缓存 ¥0.02）
 
 ## 生效的优化配置
 - 📄 `auxiliary.web_extract.model: mimo-v2-flash` — 摘要省 75%
@@ -22,7 +24,6 @@
 - 🔍 `tools.tool_search.threshold_pct: 3` — 减少工具注入
 - ⏱️ `delegation.child_timeout_seconds: 300` — 子代理 5 分钟超时
 - 🧠 `personality: SOUL.md` — 效率导向
-- 💰 成本监控阈值：日均 >¥20 预警，缓存命中率 <50% 预警
 
 ## 底层规则
 - 📋 方案: "魏松山大人" + 预估 → clarify → 执行 → ## ✅
@@ -34,12 +35,9 @@
 - 🔧 工具选择：专用工具 > terminal > browser
 - 📊 每日验证：缓存命中率+Token消耗+成本
 
-## Wiki 索引（飞轮系列）
-- `token-optimization.md` — Token 消耗优化七大策略
-- `cache-hit-optimization.md` — 缓存命中三断点架构
-- `execution-efficiency.md` — 执行效率六大策略
-- `mimo-v25pro-optimization.md` — MiMo 模型特有优化
-- `cost-monitoring.md` — 成本监控与预警
-- `toolchain-optimization.md` — 工具链优化实战
-- `best-practices-summary.md` — 速查表+实施优先级+预期收益
-- `verification-strategy.md` — 实战验证框架+案例+调整策略
+## 飞轮库结构
+- **wiki/**: 63 篇（原 concepts/ 54篇 + 飞轮迭代 9篇，已合并）
+- **growth-log.md**: 进化日志
+- **lessons-learned.md**: 经验教训
+- **index.md**: 分类目录（14 个分类）
+- **BOOTSTRAP.md**: v2.0 已现代化（Linux + MiMo）

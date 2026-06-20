@@ -1,16 +1,25 @@
 # Wiki Schema
 
 ## Domain
-用户的知识体系：投资策略分析、AI自媒体运营、公司/项目管理。
-三个领域互有交叉——投资策略通过自媒体输出，公司作为法律主体承载运营。
+Hermes 知识飞轮：AI/NΞXUS 系统能力、多 Agent 框架、Token 优化、工具集成、外贸、量化、游戏。
+
+## 目录结构
+```
+wiki/           — 所有知识页面（统一目录）
+growth-log.md   — 进化日志（只追加）
+lessons-learned.md — 经验教训（只追加）
+index.md        — 人类可读分类目录
+BOOTSTRAP.md    — 基因注入文件
+SCHEMA.md       — 本文件
+```
 
 ## Conventions
-- 文件名：小写连字符，如 `valuation-dca-strategy.md`
+- 文件名：小写连字符，如 `token-optimization.md`
 - 每个 wiki 页面带 YAML frontmatter
 - 使用 `[[wikilinks]]` 互相链接，每页至少 2 个出链
 - 更新页面必须更新 `updated` 日期
 - 新页面必须添加到 `index.md` 对应分类
-- 每次操作记录到 `log.md`
+- 每次操作记录到 `growth-log.md`
 - 含 3+ 来源的页面，段落末尾加 `^[raw/xxx]` 来源标记
 
 ## Frontmatter
@@ -28,63 +37,17 @@ confidence: high | medium | low
 
 ## Tag Taxonomy
 
-### 投资策略
-- `strategy` — 策略方案
-- `valuation` — 估值分析
-- `backtest` — 回测相关
-- `portfolio` — 组合管理
-- `market` — 市场行情
-- `risk` — 风险管理
-
-### AI/自媒体
-- `ai-model` — AI 模型相关
-- `content` — 内容创作
-- `automation` — 自动化工具
-- `platform` — 平台运营
-- `monetization` — 变现
-
-### 公司运营
-- `legal` — 工商法务
-- `finance` — 财税
-- `ops` — 运营管理
-- `product` — 产品开发
-- `team` — 团队
-
-### 工具/系统
-- `reasonix` — Reasonix 相关
-- `hermes` — Hermes Agent 相关
-- `claude-code` — Claude Code 相关
-
-### 元
-- `meta` — 知识库自身的元信息
-- `comparison` — 对比分析
-- `timeline` — 时间线
-
-规则：页面 tag 必须在上述分类中。新增 tag 先更新此文件。
-
-## Page Thresholds
-- 一个实体/概念出现在 2+ 来源 或 作为单一来源核心 → 建页
-- 仅次要提及 → 不建页
-- 页面超过 200 行 → 拆分
-- 完全被替代的页面 → 移至 `_archive/`
-
-## 三大领域页面结构
-
-### 投资策略页
-- 策略逻辑
-- 参数（PE百分位阈值、定投金额档位）
-- 回测结果摘要
-- [[相关策略对比]]
-- 来源和置信度
-
-### AI/自媒体页
-- 工具/模型简介
-- 使用方案
-- 效果数据
-- [[竞品对比]]
-
-### 公司运营页
-- 基本信息（名称、注册资本、经营范围）
-- 办理流程和进度
-- 关键节点（核名→执照→开户→税务）
-- 成本记录
+| 分类 | 标签 | 说明 |
+|------|------|------|
+| NΞXUS 核心 | `nexus` `architecture` | 双引擎、角色分工、防作弊 |
+| 多 Agent | `multi-agent` `framework` | AutoGen/CrewAI/LangGraph/MetaGPT |
+| CC 集成 | `cc` `integration` | Claude Code 配置、调试 |
+| Token 优化 | `token` `optimization` `cache` | 消耗优化、缓存、上下文管理 |
+| 工具 | `tool` `platform` `mcp` | MCP/ACI/LiteLLM/Harbor |
+| 安全 | `security` `review` | 代码审查、渗透测试 |
+| 网络 | `network` `search` | 搜索引擎、浏览器自动化 |
+| 外贸 | `trade` `market` | 选品、市场调研、认证 |
+| 量化 | `quant` `backtest` | 策略、回测 |
+| 游戏 | `game` | 游戏经济学 |
+| 视频 | `video` `ai-video` | AI 短视频制作 |
+| 小说 | `novel` `ai-novel` | AI 小说引擎 |
