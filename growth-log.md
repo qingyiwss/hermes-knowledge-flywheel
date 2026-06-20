@@ -232,3 +232,24 @@
   - 内容：角色边界 + 代码质量标准 + 常见陷阱 + 效率技巧
   - 从飞轮提炼 5 个关键点：角色边界、代码审查、上下文瘦身、测试驱动、任务精度
 - **效果：** CC 每次启动自动读取，零额外 Token 消耗
+
+## [2026-06-20] 技能优化 — 过时引用修复 + 模型名统一
+
+- **来源：** 用户要求优化技能，检查欠缺之处
+- **诊断发现：**
+  - knowledge-index: 引用 concepts/ 路径（应为 wiki/），说 54 篇（应为 63）
+  - workflow-baogao: 模板写 deepseek-v4-pro（应为 mimo-v2.5-pro）
+  - hermes-config-audit: 辅助模型写 deepseek-v4-flash（应为 mimo-v2-flash）
+  - nexus-core: 多处 DeepSeek 引用未更新
+  - claude-code: 配置示例仍用 DeepSeek
+  - status-reporting: 模型名过时
+  - nexus-boot: 飞轮库数量过时（4→6）
+- **修复内容：**
+  - knowledge-index: 路径改为 wiki/，数量改为 63，新增 MiMo/Token 优化路由
+  - workflow-baogao: 模型名改为 mimo-v2.5-pro
+  - hermes-config-audit: 辅助模型改为 mimo-v2-flash
+  - nexus-core: 5 处 DeepSeek → MiMo
+  - claude-code: 4 处 DeepSeek → MiMo
+  - status-reporting: 模型名改为 mimo-v2.5-pro
+  - nexus-boot: 飞轮库数量改为 6
+- **缺失技能识别：** Freqtrade、Supabase、Vercel、MiMo 模型优化
