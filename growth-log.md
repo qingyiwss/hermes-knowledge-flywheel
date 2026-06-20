@@ -273,3 +273,18 @@
   - Supabase 指南：✅ 新增
   - Next.js 指南：✅ 新增
   - 项目级 CLAUDE.md：✅ transcribo/OpenMontage 正常
+
+## [2026-06-20] CC 官方指南学习 — 双方同步沉淀
+
+- **来源：** 用户分享 Claude Code 官方入门指南，要求 Hermes 和 CC 双方学习总结沉淀
+- **学到了什么：**
+  - CLAUDE.md 层级结构：全局 → 项目级 → 子目录级（越近越优先）
+  - local.claude.md：个人上下文，不提交 Git
+  - 三阶段工作流：先问答熟悉 → 先规划后执行 → 执行+工具验证
+  - 自然语言 Git 指令："提交推送 PR" 可直接用
+  - 工具集成：CC 能调 CI、MCP、测试、截图迭代
+- **产出：**
+  - 更新 `~/.claude/CLAUDE.md`（121→144 行，新增三阶段工作流+CLAUDE.md 层级+自然语言指令）
+  - 新增 `wiki/claude-code-best-practices.md`（CC 最佳实践 Wiki）
+  - 更新 `index.md`（新增 CC 最佳实践条目）
+  - 更新 `hot.md`

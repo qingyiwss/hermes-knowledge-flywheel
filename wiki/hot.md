@@ -1,12 +1,13 @@
 # Hot Cache — 最新上下文
-> 更新: 2026-06-20 · Wiki: 63篇 · MiMo 模型时代
+> 更新: 2026-06-20 · Wiki: 64篇 · MiMo 模型时代
 
 ## 最近事件
 - 🔄 **模型切换** — DeepSeek V4 Pro → MiMo-V2.5-Pro（小米），全栈迁移
 - 📊 **飞轮#1-5** — Token消耗+缓存命中+执行效率+工具链+最佳实践+验证（8篇新 Wiki）
 - 🏗️ **飞轮库大修** — concepts/ 54篇全量迁入 wiki/，BOOTSTRAP 现代化，index.md 重建
+- 📚 **CC 能力升级** — Supabase+Next.js 指南，CLAUDE.md 三阶段工作流
+- 🎓 **CC 官方指南学习** — CLAUDE.md 层级结构+自然语言指令+工具集成
 - 🌐 **独立站上线** — qingyiwss.github.io/saudi-trade-site（英阿双语，GEO 优化）
-- 🔧 **Loop Engineering** — hermes-cc-worktree.sh + hermes-cc-loop.sh 补齐
 
 ## 模型配置
 | 角色 | 模型 | 提供商 |
@@ -35,9 +36,15 @@
 - 🔧 工具选择：专用工具 > terminal > browser
 - 📊 每日验证：缓存命中率+Token消耗+成本
 
+## CC 能力指南
+- `~/.claude/CLAUDE.md` — 全局指南（144 行，含三阶段工作流）
+- `CLAUDE-supabase.md` — Supabase 全栈操作
+- `CLAUDE-nextjs.md` — Next.js App Router 深度指南
+- `wiki/claude-code-best-practices.md` — CC 最佳实践 Wiki
+
 ## 飞轮库结构
-- **wiki/**: 63 篇（原 concepts/ 54篇 + 飞轮迭代 9篇，已合并）
+- **wiki/**: 64 篇（63 原有 + 1 新增 CC 最佳实践）
 - **growth-log.md**: 进化日志
-- **lessons-learned.md**: 经验教训
-- **index.md**: 分类目录（14 个分类）
+- **lessons-learned.md**: 经验教训（+3 条新增）
+- **index.md**: 分类目录（15 个分类）
 - **BOOTSTRAP.md**: v2.0 已现代化（Linux + MiMo）

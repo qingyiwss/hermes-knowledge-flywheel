@@ -101,3 +101,7 @@
 ## 🔄 MiMo 模型
 
 - [[mimo-v25pro-optimization]] — MiMo-V2.5-Pro 模型特有优化
+
+## 📚 CC 最佳实践
+
+- [[claude-code-best-practices]] — Claude Code 官方指南 + NΞXUS 实战经验
