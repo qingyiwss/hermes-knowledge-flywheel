@@ -1,27 +1,34 @@
 # Hot Cache — 最新上下文
-> 更新: 2026-06-13 · Wiki: 55篇 · 量化框架已安装
+> 更新: 2026-06-20 · Wiki: 58篇 · MiMo 模型时代
 
 ## 最近事件
-- 📊 **量化工作区搭建** — Freqtrade v2026.5.1 + NautilusTrader 双框架
-- 🔧 **全面自我优化 7 项** — web_extract省钱、压缩更激进、checkpoints防误改
-- 🔍 **DDGS 搜索配置** — 免费高质量搜索，中英文均优
-- 🆕 **CC (Claude Code)** — v2.1.175，DeepSeek API 驱动
-- 🤖 **主模型** — deepseek-v4-pro（已切换）
+- 🔄 **模型切换** — DeepSeek V4 Pro → MiMo-V2.5-Pro（小米），全栈迁移（Hermes + CC + 子代理）
+- 📊 **Token/缓存/效率飞轮#1** — 三篇 Wiki 创建，基于外部调研+实战数据
+- 🌐 **独立站上线** — qingyiwss.github.io/saudi-trade-site（英阿双语，GEO 优化，55/57 Q&A FAQ）
+- 🔧 **Loop Engineering** — hermes-cc-worktree.sh + hermes-cc-loop.sh 补齐
+- 📱 **外贸渠道调研** — WhatsApp 中东回复率 50%+，多渠道叠加 +287%
 
-## 量化工作区
-- 框架：Freqtrade (交易) + NautilusTrader (回测)
-- 路径：/root/code/quant/
-- 策略：NostalgiaForInfinityX（社区最成熟，38,977行）+ SampleStrategy
-- 市场：加密货币（OKX/Binance）
+## MiMo 模型配置
+- 主模型：mimo-v2.5-pro（xiaomi, token-plan-cn.xiaomimimo.com）
+- 子代理/辅助：mimo-v2-flash
+- 费用：输入 ¥3/百万（缓存命中 ¥0.025），输出 ¥6/百万
+- Claude Code 设置：~/.claude/settings.json 已同步
 
 ## 生效的优化配置
-- 🔍 `web.search_backend: ddgs` — 免费搜索
-- 📄 `auxiliary.web_extract.model: deepseek-v4-flash` — 摘要省 85%
-- 🗜️ `compression.threshold: 0.45 / protect_last_n: 15` — 激进压缩
-- 💾 `checkpoints.enabled: true` — /rollback 防误改
+- 📄 `auxiliary.web_extract.model: mimo-v2-flash` — 摘要省 75%
+- 🗜️ `LCM_CONTEXT_THRESHOLD=0.20` — 200K 触发压缩
+- 🔍 `tools.tool_search.threshold_pct: 3` — 减少工具注入
+- ⏱️ `delegation.child_timeout_seconds: 300` — 子代理 5 分钟超时
 - 🧠 `personality: SOUL.md` — 效率导向
 
 ## 底层规则
 - 📋 方案: "魏松山大人" + 预估 → clarify → 执行 → ## ✅
 - 🚨 "魏松山"= 丢规则触发词
-- 🔄 飞轮后推库
+- 🔄 飞轮后推库（growth-log + lessons-learned + hot.md）
+- 🌐 翻译铁律：能翻译的尽量翻译
+- 💻 CC 出错退回 CC 修，Hermes 不越位
+
+## Wiki 索引（最近新增）
+- `token-optimization.md` — Token 消耗优化七大策略
+- `cache-hit-optimization.md` — 缓存命中三断点架构
+- `execution-efficiency.md` — 执行效率六大策略

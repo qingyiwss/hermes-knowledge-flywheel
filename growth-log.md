@@ -142,3 +142,18 @@
 **触发词「魏松山」= 上下文丢失信号**
 - 当收到消息只包含"魏松山"时 → 立即从 all_concepts 中重建上下文，继续当前任务
 - 每次飞轮完成后必须推送到 GitHub：`git add growth-log.md lessons-learned.md wiki/hot.md && git commit -m "docs: 飞轮#N 同步 — <摘要>" && git push`
+
+## [2026-06-20] 飞轮#1 — Token 消耗 + 缓存命中 + 执行效率（MiMo 时代）
+
+- **来源：** 用户要求针对 token 消耗、缓存命中、执行效率进行多次飞轮迭代
+- **学到了什么：**
+  - MiMo 缓存命中价格是全价的 0.8%（¥0.025 vs ¥3/百万），是 DeepSeek 全价的 1/70
+  - 前缀缓存可省 90% 费用 + 85% 延迟（Anthropic 实测）
+  - ProjectDiscovery 实战：缓存命中率 7% → 84%，总费用省 59-70%
+  - 三断点架构：系统提示(1h TTL) → 工具定义(1h) → 历史消息(5min) → 最新消息(不缓存)
+  - no_agent Cron 模式可实现零 Token 监控
+  - Loop Engineering 条件循环可自动修复 bug（替代人工 3-5 轮对话）
+  - 子代理任务描述越精确，执行越快（减少猜测和重做）
+- **能力提升：** 新增 3 篇 Wiki（token-optimization / cache-hit-optimization / execution-efficiency）
+- **下一步：** 第 2 轮迭代 — 外部调研 MiMo 实际缓存命中率，补充真实数据
+
