@@ -1,11 +1,9 @@
 # Hot Cache — 最新上下文
-> 更新: 2026-06-20 · Wiki: 61篇 · MiMo 模型时代
+> 更新: 2026-06-20 · Wiki: 62篇 · MiMo 模型时代
 
 ## 最近事件
 - 🔄 **模型切换** — DeepSeek V4 Pro → MiMo-V2.5-Pro（小米），全栈迁移（Hermes + CC + 子代理）
-- 📊 **飞轮#1** — Token消耗+缓存命中+执行效率（三篇 Wiki）
-- 📊 **飞轮#2** — MiMo 模型特有优化 + 成本监控（两篇 Wiki）
-- 📊 **飞轮#3** — 工具链优化实战（一篇 Wiki）
+- 📊 **飞轮#1-4** — Token消耗+缓存命中+执行效率+工具链+最佳实践（六篇 Wiki）
 - 🌐 **独立站上线** — qingyiwss.github.io/saudi-trade-site（英阿双语，GEO 优化，55/57 Q&A FAQ）
 - 🔧 **Loop Engineering** — hermes-cc-worktree.sh + hermes-cc-loop.sh 补齐
 - 📱 **外贸渠道调研** — WhatsApp 中东回复率 50%+，多渠道叠加 +287%
@@ -42,3 +40,4 @@
 - `mimo-v25pro-optimization.md` — MiMo 模型特有优化
 - `cost-monitoring.md` — 成本监控与预警
 - `toolchain-optimization.md` — 工具链优化实战
+- `best-practices-summary.md` — 速查表+实施优先级+预期收益
