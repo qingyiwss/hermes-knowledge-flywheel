@@ -157,3 +157,17 @@
 - **能力提升：** 新增 3 篇 Wiki（token-optimization / cache-hit-optimization / execution-efficiency）
 - **下一步：** 第 2 轮迭代 — 外部调研 MiMo 实际缓存命中率，补充真实数据
 
+
+## [2026-06-20] 飞轮#2 — MiMo 模型特有优化 + 成本监控
+
+- **来源：** 用户要求多次飞轮迭代，第2轮聚焦 MiMo 模型特性和成本监控
+- **学到了什么：**
+  - MiMo 缓存命中价格 $0.004/百万，比 DeepSeek V4 Pro 全价低 435 倍
+  - MiMo 智能体任务能力 68.4 vs DeepSeek 59.1（+15.7%），但编程 57.2 vs 58.8（-2.8%）
+  - MiMo 是推理模型，内部链式思考消耗额外 Token（简单任务 +500-1000 Token）
+  - MiMo 简洁度 #4/92，输出比同类少 13%，天然省输出 Token
+  - 成本监控五大指标：日均费用、缓存命中率、每轮平均 Token、子代理失败率、CC 重做率
+  - no_agent Cron 是最省 Token 的监控方案（零消耗）
+- **Wiki 增量：**
+  - mimo-v25pro-optimization.md — MiMo 模型参数/价格/配置优化
+  - cost-monitoring.md — 成本监控指标/阈值/报告脚本
