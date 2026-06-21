@@ -1,6 +1,6 @@
 # Wiki Index — Hermes 知识飞轮
 
-> 最后更新：2026-06-20 | 总页数：63 | 模型：MiMo-V2.5-Pro
+> 最后更新：2026-06-20 | 总页数：64 | 模型：MiMo-V2.5-Pro
 
 ---
 
@@ -105,3 +105,7 @@
 ## 📚 CC 最佳实践
 
 - [[claude-code-best-practices]] — Claude Code 官方指南 + NΞXUS 实战经验
+
+## 🎯 工作方式
+
+- [[hermes-workstyle-upgrade]] — Hermes 工作方式升级：多轮提问 + 对结果负责
