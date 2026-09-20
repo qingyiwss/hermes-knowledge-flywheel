@@ -306,3 +306,21 @@
   - 多轮提问：每轮 2-3 个问题，根据回答深入
   - 对结果负责：执行前确认 → 执行中验证 → 执行后跟踪
   - 语言习惯：极简直令 = 隐含需求，不追问不催办
+
+## [2026-09-20] 全方位递归升级
+
+- **来源：** 用户要求"全方位递归升级一下你们自己的能力"
+- **学到了什么：**
+  - 飞轮库 hot.md 需要定期同步（wiki 数量、最后更新时间）
+  - 辅助模型配置容易遗漏（deepseek-v4-flash → mimo-v2-flash）
+  - 记忆系统中的行数记录需要与实际保持一致
+  - 优化参数（tool_search.threshold_pct、child_timeout_seconds）需要定期检查
+- **产出：**
+  - 更新 `hot.md`（65篇，日期 2026-09-20）
+  - 更新 `MEMORY.md`（CC CLAUDE.md 144→162行）
+  - 更新 Hermes 辅助模型配置（4个 slot 全部改为 mimo-v2-flash）
+  - 设置优化参数（tool_search 3%、child_timeout 300s、web_extract 600s）
+- **关键规则：**
+  - 飞轮库同步：hot.md 必须与 wiki/ 实际文件数一致
+  - 辅助模型检查：config.yaml 中的 deepseek 引用需要更新
+  - 记忆维护：MEMORY.md 中的行数记录需要定期校准

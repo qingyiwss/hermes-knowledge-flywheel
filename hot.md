@@ -1,6 +1,6 @@
 # 🔥 Hot — 最新上下文
 
-> 最后更新：2026-06-20 | 模型：MiMo-V2.5-Pro
+> 最后更新：2026-09-20 | 模型：MiMo-V2.5-Pro
 
 ---
 
@@ -9,10 +9,10 @@
 - **Hermes 配置**：mimo-v2.5-pro（xiaomi 提供商）
 - **CC 配置**：mimo-v2.5-pro（主模型）+ mimo-v2-flash（子代理）
 - **飞轮库**：6 个（hermes/quant/trade/game/video/novel）
-- **Wiki 总数**：64 篇
-- **最近飞轮**：工作方式升级（多轮提问 + 对结果负责）
+- **Wiki 总数**：65 篇
+- **最近飞轮**：全方位递归升级（飞轮库+技能+配置+记忆）
 
-## 最新 Wiki（2026-06-20）
+## 最新 Wiki（2026-09-20）
 
 1. `hermes-workstyle-upgrade.md` — Hermes 工作方式升级
 2. `claude-code-best-practices.md` — CC 最佳实践

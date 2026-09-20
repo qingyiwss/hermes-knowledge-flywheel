@@ -224,3 +224,24 @@
 - **"飞轮"**：把当前成果沉淀到知识库
 - **"记住这个"**：存入永久记忆
 
+
+### L23: 飞轮库 hot.md 必须定期同步
+
+- **症状**：hot.md 声称 64 篇，实际 wiki/ 有 65 篇
+- **根因**：新增 wiki 后忘记更新 hot.md
+- **修复**：每次新增 wiki 后立即更新 hot.md（数量+日期）
+- **验证**：`ls wiki/*.md | wc -l` 必须与 hot.md 中的数字一致
+
+### L24: 辅助模型配置容易遗漏
+
+- **症状**：config.yaml 中辅助模型还在用 deepseek-v4-flash
+- **根因**：切换主模型时忘记更新辅助模型 slot
+- **修复**：切换模型时必须同时更新 4 个辅助 slot（approval/compression/curator/title_generation）
+- **验证**：`grep deepseek config.yaml` 应返回空
+
+### L25: 记忆系统中的行数记录需要定期校准
+
+- **症状**：MEMORY.md 记录 CC CLAUDE.md 为 144 行，实际为 162 行
+- **根因**：CC CLAUDE.md 更新后忘记同步 MEMORY.md
+- **修复**：每次更新 CC CLAUDE.md 后同步更新 MEMORY.md 中的行数
+- **验证**：`wc -l ~/.claude/CLAUDE.md` 必须与 MEMORY.md 中的数字一致
